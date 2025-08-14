@@ -1,4 +1,61 @@
 \documentclass{article}
+\usepackage{graphicx} % Required to include images
+\usepackage{caption}  % For captions and table numbering
+\usepackage{array}    % For more advanced table options
+
 \begin{document}
-Hello, World! This is my first LaTeX document.
+
+\noindent d. Graph the graph below, label the y --- axis, x --- axis, y --- intercept, and x --- intercept:
+\vspace{1em} % Add some vertical space
+
+\begin{figure}[htbp]
+    \begin{minipage}[t]{0.6\textwidth}
+        \centering
+        % Replace 'your_graph_image.png' with the actual filename of your graph image.
+        % Make sure the image is in the same directory as your .tex file.
+        % \includegraphics[width=\textwidth]{your_graph_image.png}
+        \caption*{A blank graph for plotting} % Use a caption if you want to label the graph.
+    \end{minipage}
+    \begin{minipage}[t]{0.4\textwidth}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            $t$ & $L(t)$ \\
+            \hline
+            0 & \\
+            \hline
+            3 & \\
+            \hline
+            5 & \\
+            \hline
+            11 & \\
+            \hline
+            15 & \\
+            \hline
+            18 & \\
+            \hline
+            20 & \\
+            \hline
+        \end{tabular}
+    \end{minipage}
+\end{figure}
+
+\vspace{2em} % Add more vertical space
+
+\noindent 2. You are in a race, you have a 6 foot headstart and are running a short 100 ft race
+\vspace{1em}
+
+% "Sideways" or horizontal table using the tabular environment
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        Seconds & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+        \hline
+        Feet & 6 & 8 & 10 & 12 & 14 & 16 & 18 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\noindent a. Use any two of the ordered pairs from the table to derive the equation $F$ in terms of $t$
+
 \end{document}
