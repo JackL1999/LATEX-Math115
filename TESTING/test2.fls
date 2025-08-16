@@ -1,6 +1,6 @@
-PWD c:\Users\jling\OneDrive\Desktop\VSCode\LATEX-Math115
+PWD c:\Users\jling\OneDrive\Desktop\VSCode\LATEX-Math115\TESTING
 INPUT C:\Users\jling\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\jling\OneDrive\Desktop\VSCode\LATEX-Math115\test2.tex
+INPUT c:\Users\jling\OneDrive\Desktop\VSCode\LATEX-Math115\TESTING\test2.tex
 OUTPUT test2.log
 INPUT C:\Users\jling\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\jling\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

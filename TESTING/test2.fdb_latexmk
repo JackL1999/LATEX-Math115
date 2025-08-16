@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755163142.00705 "c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/test2.tex" "test2.pdf" "test2" 1755163142.40655 0
+["pdflatex"] 1755384465.2439 "c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/TESTING/test2.tex" "test2.pdf" "test2" 1755384465.8561 0
   "C:/Users/jling/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755162519 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/jling/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1755162600 13257295 4ebb935f9ed45119ed4c8fe8bb4fb44c ""
   "C:/Users/jling/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -19,9 +19,9 @@
   "C:/Users/jling/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1749322634 4023 e66acf578d6b564c4670fb57ff336a7a ""
   "C:/Users/jling/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1751005717 30351 a2b09edc6c93a742566b222c33d0278e ""
   "C:/Users/jling/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1749468414 15698 f5f20b24886bb50156054c53e19b13fd ""
-  "c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/test2.tex" 1755163141 1874 fc19e616174d861e9f5338c967a4d0cb ""
-  "test2.aux" 1755163142 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "test2.tex" 1755163141 1874 fc19e616174d861e9f5338c967a4d0cb ""
+  "c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/TESTING/test2.tex" 1755163185 1874 fc19e616174d861e9f5338c967a4d0cb ""
+  "test2.aux" 1755384465 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "test2.tex" 1755163185 1874 fc19e616174d861e9f5338c967a4d0cb ""
   (generated)
   "test2.aux"
   "test2.log"

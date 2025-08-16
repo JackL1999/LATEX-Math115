@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.14)  14 AUG 2025 02:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.14)  16 AUG 2025 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/test2.tex
-(c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/test2.tex
+**c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/TESTING/test2.tex
+(c:/Users/jling/OneDrive/Desktop/VSCode/LATEX-Math115/TESTING/test2.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
 (C:\Users\jling\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -128,12 +128,12 @@ L3 programming layer <2025-07-20>
  ) 
 Here is how much of TeX's memory you used:
  2701 strings out of 468134
- 48535 string characters out of 5430740
+ 48591 string characters out of 5430740
  447831 words of memory out of 5000000
  31354 multiletter control sequences out of 15000+600000
  626825 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,327b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,335b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jling/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jling/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 Output written on test2.pdf (1 page, 30742 bytes).
 PDF statistics:
