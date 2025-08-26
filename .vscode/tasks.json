@@ -4,7 +4,13 @@
         {
             "label": "Remove All LaTeX Temporary Files",
             "type": "shell",
-            "command": "./cleanup.bat",
+            "command": "",
+            "windows": {
+                "command": "./cleanup.bat"
+            },
+            "linux": {
+                "command": "./cleanup.sh"
+            },
             "group": "build",
             "presentation": {
                 "reveal": "always",
