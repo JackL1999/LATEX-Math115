@@ -86,15 +86,16 @@
 
 \vspace{1cm}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.50]
         \draw[gray!15,step=1cm] (-8,-8) grid (8,8);    
         \draw[line width=0.5mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
         \foreach \x in {-8,...,8} \draw (\x,.1)--(\x,-.1) node[below] {\footnotesize $\x$};
         \draw[line width=0.5mm,  -latex] (0,-8) -- (0,8.2) node[above] {$y$};
         \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y) node[left] {\footnotesize $\y$};
-        \draw[red] plot[domain= -8:8] (\x,{.5*\x-2});
-        \draw[blue] plot[domain= -8:8] (\x,{-.7*\x+1});
-        \draw[cyan,line width=2pt] plot[domain= -5.5:5.5] (\x,{.4*\x*\x-4});
+        \draw[red,line width=2pt] plot[domain= -6:3] (\x,{2*\x+4});
+        \draw[blue,line width=2pt] plot[domain= -8:2] (\x,{-1*\x-6});
+        \draw[green,line width=2pt] plot[domain= -8:8] (\x,{-0.5*\x+1});
+        \draw[cyan,line width=2pt] plot[domain= -7:7] (\x,{0.25*\x*\x-4});
 \end{tikzpicture}
 
 \vspace{1cm}
@@ -108,3 +109,4 @@
         
 \end{tikzpicture}
 \end{document}
+
