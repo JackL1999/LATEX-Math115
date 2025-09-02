@@ -4,11 +4,40 @@
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
- cell1 & cell2 & cell3 \\ 
+ cell1 & cell2 & cell3 \\
+ \hline
  cell4 & cell5 & cell6 \\ 
+ \hline
  cell7 & cell8 & cell9 \\ 
  \hline
 \end{tabular}
 \end{center}
 
+
+\begin{center}
+\begin{tabular}{ |c| } 
+ \hline
+ cell1 \\
+ \hline
+
+\end{tabular}
+\end{center}
+
+\fbox{This is my text inside a box.}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins} % For advanced options like rounded corners
+
+\begin{document}
+\begin{tcolorbox}[
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Definition.} \textit{Given a graph in the coordinate plane, coordinate points of the form (x,0) on the curve are x-intercepts, and coordinate points of the form (0,y) on the curve are y-intercepts.}
+\end{tcolorbox}
 \end{document}
