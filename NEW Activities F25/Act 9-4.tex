@@ -24,30 +24,19 @@
     \normalsize Chapter 2 Section 2 \\
     \normalsize What are functions?
 \end{center}
+\vspace{0.5cm}
 \textbf{Introduction to Intercepts of a graph and how to identify them}
 
-\vspace{1cm} % Add space between the title and the first exercise
 \noindent
 \begin{minipage}[c]{0.45\textwidth}
     \begin{enumerate}
-        
-        \item For graph (A) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (B) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (C) what are the x-intercepts and y-intercepts?     
-        \vspace{1cm}
-        \item For graph (D) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (E) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (F) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (G) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (H) what are the x-intercepts and y-intercepts?
-        \vspace{1cm}
-        \item For graph (I) what are the x-intercepts and y-intercepts?
+        \vspace{-2cm}
+        \item What is the domain and range for plots (A),(B),(C), and (D)?
+        \vspace{6cm}
+        \item What is the domain and range for plots (E),(F),(G), and (H)?
+        \vspace{6cm}
+        \item What is the domain and range for plots (J),(K),(M), and (N)?   
+
 
     \end{enumerate}
 \end{minipage}%
@@ -109,17 +98,80 @@
         % The \foreach loop for y-axis numbers has been modified
         \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y);
         % Red line with adjusted label 'A'
-        \draw[red,line width=1pt] plot[domain= -6:2] (\x,{2*\x+4}) node[font=\tiny] at (2.5, 7) {A};
-
+        \draw[red,line width=1pt] plot[smooth, samples=100, domain= -2:0] (\x,{0.5*(\x-2)^2 - 1}) node[font=\tiny] at (-1, 7) {J};
+        \draw[red] (-2, 7) circle (0.2);
+        \fill[red] (0, 1) circle (0.2);
+        \draw[red,line width=1pt] plot[smooth, samples=100, domain= 4:6] (\x,{0.5*(\x-2)^2 - 1}) node[font=\tiny] at (5, 7) {J};
+        \draw[red] (4, 1) circle (0.2);
+        \fill[red] (6, 7) circle (0.2);
         % Blue line with adjusted label 'B'
-        \draw[blue,line width=1pt] plot[domain= -8:2] (\x,{-1*\x-6}) node[font=\tiny] at (1.5, -6.5) {B};
-
+        \draw[green,line width=1pt, latex-] plot[smooth, samples=100, domain= -8:1.8] (\x,{0.5*\x - 2}) node[font=\tiny] at (-6, -6) {K};
         % Green line with adjusted label 'C'
-        \draw[green,line width=1pt] plot[domain= -8:8] (\x,{-0.5*\x+1}) node[font=\tiny] at (5.5, -3) {C};
-
+        \draw[green,line width=1pt, -latex] plot[smooth, samples=100, domain= 2.2:8] (\x,{0.5*\x - 2}) node[font=\tiny] at (-6, -6) {K};
+        \draw[green] (2, -1) circle (0.2);
         % Cyan line with adjusted label 'D'
-        \draw[cyan,line width=1pt] plot[domain= -7:7] (\x,{0.25*\x*\x-4}) node[font=\tiny] at (-6, 7) {D};
+        \draw[cyan,line width=1pt] plot[smooth, samples=100, domain= -8:0] (\x,{-0.25*\x - 4}) node[font=\tiny] at (-6, -2) {M};
+        \draw[cyan] (-8, -2) circle (0.2);
+        \fill[cyan] (0, -4) circle (0.2);
+        % Cyan line with adjusted label 'D'
+        % Cyan line with adjusted label 'D'
+        \draw[cyan,line width=1pt] plot[smooth, samples=100, domain= 4:8] (\x,{-0.25*\x - 4}) node[font=\tiny] at (6, -5) {M};
+        \draw[cyan] (4, -5) circle (0.2);
+        \fill[cyan] (8, -6) circle (0.2);
+        \draw[blue,line width=1pt] plot[smooth, samples=100, domain= -8:0] (\x,{6*sin(deg(pi*\x/4))}) node[font=\tiny] at (-6, 7) {N};
+        \draw[blue] (-8,0) circle (0.2);
+        \fill[blue] (0, 0) circle (0.2);
     \end{tikzpicture}
 \end{minipage}
 
+\vspace{1cm}
+\noindent
+\begin{minipage}[c]{0.45\textwidth}
+    \begin{enumerate}
+        \vspace{-2cm}
+        \item Draw your own function that has a Domain of $[-3,6]$ and Range $(-4,5]$
+        \vspace{6cm}
+        \item Draw your own function that has a Domain of $[-3,6]$ and Range $(-4,1)\cup(3,5)$
+        \vspace{6cm}
+        \item Draw your own function that has a Domain of $[-3,1]\cup(2,6)$ and Range $(-4,5)$ 
+
+
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.50\textwidth} % Minipage for the TikZ graph (increased width slightly for labels)
+    \centering % Center the TikZ picture within its minipage
+    \begin{tikzpicture}[scale=0.35]
+        \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
+        \draw[line width=0.2mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
+        % The \foreach loop for x-axis numbers has been modified
+        \foreach \x in {-8,...,8} \draw (\x,.1)--(\x,-.1);
+        \draw[line width=0.2mm,  -latex] (0,-8) -- (0,8.2) node[above] {$y$};
+        % The \foreach loop for y-axis numbers has been modified
+        \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y);
+
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.35]
+        \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
+        \draw[line width=0.2mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
+        % The \foreach loop for x-axis numbers has been modified
+        \foreach \x in {-8,...,8} \draw (\x,.1)--(\x,-.1);
+        \draw[line width=0.2mm,  -latex] (0,-8) -- (0,8.2) node[above] {$y$};
+        % The \foreach loop for y-axis numbers has been modified
+        \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y);
+
+
+
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.35]
+            \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
+            \draw[line width=0.2mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
+            % The \foreach loop for x-axis numbers has been modified
+            \foreach \x in {-8,...,8} \draw (\x,.1)--(\x,-.1);
+            \draw[line width=0.2mm,  -latex] (0,-8) -- (0,8.2) node[above] {$y$};
+            % The \foreach loop for y-axis numbers has been modified
+            \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y);
+
+    \end{tikzpicture}
+    \end{minipage}
 \end{document}
