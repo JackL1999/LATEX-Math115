@@ -1,18 +1,19 @@
 \documentclass{article}
 \usepackage[a4paper, margin=1in]{geometry}
-\usepackage{array} % Required for p{width} column type
+\usepackage{array}
 
 \begin{document}
 
 \noindent
-\begin{tabular}{|c|c|} % The outer 2x2 grid
+\begin{tabular}{|c|c|c|} 
 \hline
 
-% Top-left outer cell (2x2 inches)
+% Top row
 \begin{minipage}[c][2in][c]{2in}
     \centering
-    \vspace*{-1cm} 
+    \vspace{0.25cm}
     1. This is Question 1 of the game
+    \vfill
     \begin{tabular}{|p{1in}|p{0.5in}|}
     \hline
     a) this is one of the options of this game & image1 \\
@@ -22,51 +23,171 @@
     \end{tabular}
 \end{minipage}
 &
-% Top-right outer cell (2x2 inches)
 \begin{minipage}[c][2in][c]{2in}
     \centering
-    Some content at the top of the cell.
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
     \vfill
     \begin{tabular}{|p{1in}|p{0.5in}|}
     \hline
-    Bot-Right-1 & BR-2 \\\\\\
+    a) this is one of the options of this game & image1 \\
     \hline
-    Bot-Right-3 & BR-4 \\\\\\
-    \hline
-    \end{tabular}
-\end{minipage}
-\\
-\hline
-% Bottom-left outer cell (2x2 inches)
-\begin{minipage}[c][2in][c]{2in}
-    \centering
-    Some content at the top of the cell.
-    \vfill
-    \begin{tabular}{|p{1in}|p{0.5in}|}
-    \hline
-    Bot-Right-1 & BR-2 \\\\\\
-    \hline
-    Bot-Right-3 & BR-4 \\\\\\
+    b) this is the other options of this game & image2 \\
     \hline
     \end{tabular}
 \end{minipage}
 &
-% Bottom-right outer cell (2x2 inches)
-
 \begin{minipage}[c][2in][c]{2in}
     \centering
-    Some content at the top of the cell.
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
     \vfill
     \begin{tabular}{|p{1in}|p{0.5in}|}
     \hline
-    Bot-Right-1 & BR-2 \\\\\\
+    a) this is one of the options of this game & image1 \\
     \hline
-    Bot-Right-3 & BR-4 \\\\\\
+    b) this is the other options of this game & image2 \\
     \hline
     \end{tabular}
 \end{minipage}
 \\
 \hline
+
+% Second row
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+\\
+\hline
+
+% Third row
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+\\
+\hline
+
+% Fourth row
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[c][2in][c]{2in}
+    \centering
+    \vspace{0.25cm}
+    1. This is Question 1 of the game
+    \vfill
+    \begin{tabular}{|p{1in}|p{0.5in}|}
+    \hline
+    a) this is one of the options of this game & image1 \\
+    \hline
+    b) this is the other options of this game & image2 \\
+    \hline
+    \end{tabular}
+\end{minipage}
+\\
+\hline
+
 \end{tabular}
 
 \end{document}
