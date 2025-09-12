@@ -8,12 +8,13 @@
 \usepackage{tikz}
 \usepackage{enumerate}
 \usepackage{enumitem}
+\usepackage{array}
+
 \pagestyle{fancy}
 \fancyhf{} % Clear all header and footer fields
 \fancyhead[L]{Your Name} % Left header with name
 \fancyhead[R]{September 11th 2025} % Right header with date
 \renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
-\newmdtheoremenv{theo}{Theorem}
 
 \begin{document}
 
@@ -21,27 +22,133 @@
 \begin{center}
     \Large \textbf{Math 115E Activity 5} \\
     \vspace{0.2cm}
-    \normalsize Chapter 3 Section 2 \\
-    \normalsize Number Systems and Solution Sets
+    \normalsize Chapter 3 Section 1 \\
+    \normalsize Introduction to function notation
 \end{center}
-\vspace{1cm} % Add space between the title and the first exercise
 
-\begin{tcolorbox}[
-    width=\linewidth,
-    colframe=black,         % Border color
-    colback=white,          % Background color
-    boxrule=0.5pt,          % Border thickness
-    left=1mm, right=1mm,    % Horizontal padding
-    top=1mm, bottom=1mm,    % Vertical padding
-    arc=2mm                 % Corner radius
-]
-\textbf{Definition.} \textit{Given a graph in the coordinate plane, coordinate points of the form (x,0) on the curve are x-intercepts, and coordinate points of the form (0,y) on the curve are y-intercepts.}
-\end{tcolorbox}
+\begin{center}
+\setlength{\extrarowheight}{3pt}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.3\textwidth}|>{\centering\arraybackslash}p{0.3\textwidth}|>{\centering\arraybackslash}p{0.3\textwidth}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Algebraic Rules}} \\
+\hline
+$ax + bx = (a+b)x$ & $a(bx) = abx$ & $a(b+c) = ab+ac$ \\
+\hline
+$b^x \cdot b^y = b^{x+y}$ & $(b^x)^y = b^{xy}$ & $(ab)^x = a^x b^x$ \\
+\hline
+$b^{-x} = \frac{1}{b^x}$ & $\frac{b^x}{b^y} = b^{x-y}$ & $\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}$ \\
+\hline
+\multicolumn{3}{|c|}{$(t+1)^2 \longrightarrow (t+1)(t+1) \longrightarrow t(t+1) + 1(t+1) \longrightarrow t^2 + t + t + 1 \longrightarrow t^2 + 2t + 1$} \\
+\hline
+\end{tabular}
+\end{center}
 
-\begin{theo}
-Given a graph in the coordinate plane, 
-coordinate points of the form (x,0) on the curve are x-intercepts,
- and coordinate points of the form (0,y) on the curve are y-intercepts.
-\end{theo}
+\noindent
+\textbf{Difficulty 1:}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \item $f(x)=2x+1, f(2)=?$
+        \\\\\\
+        \item $f(x)=4x-3, f(a)=?$
+        \\\\\\
+        \item $f(x)=x+2, f(-1)=?$
 
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{4} % continues numbering
+        \item $f(x)=2x+1, f(5)=?$
+        \\\\\\
+        \item $f(x)=4x-3, f(7)=?$
+        \\\\\\
+        \item $f(x)=x+2, f(b)=?$
+
+    \end{enumerate}
+\end{minipage}
+
+\vspace{4cm}
+\noindent
+\textbf{Difficulty 2:}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{7}
+        \item $f(x)=2x^2, f(2)=?$
+        \\\\\\
+        \item $f(x)=-x^3 + x + 1, f(a)=?$
+        \\\\\\
+        \item $f(x)=x^2 - 4x + 2, f(0)=?$
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{11} % continues numbering
+        \item $f(x)=2x^2, f(5)=?$
+        \\\\\\
+        \item $f(x)=-x^3 + x + 1, f(4)=?$
+        \\\\\\
+        \item $f(x)=x^2 - 4x + 2, f(10)=?$
+
+    \end{enumerate}
+\end{minipage}
+
+\vspace{10cm}
+\noindent
+\textbf{Difficulty 3:}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{14}
+        \item $f(x) = x+1, f(a^2+1)=?$
+        \\\\\\
+        \item $f(x)= 2x, f(x-1)=?$ 
+        \\\\\\
+        \item $f(x)=x^2, f(x+1)=?$
+
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{18} % continues numbering
+        \item $f(x) = x+1, f(2a-1)=?$
+        \\\\\\
+        \item $f(x)= 2x, f(x^2)=?$, 
+        \\\\\\
+        \item $f(x)=x^2, f(-x+3)=?$
+
+    \end{enumerate}
+\end{minipage}
+
+\vspace{4cm}
+\noindent
+\textbf{Difficulty 4:}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{22}
+        \item $f(x)=(x+1)^2, f(x-1)=?$
+        \\\\\\
+        \item $f(x)=x(2x+1)^2, f(4x)=?$
+        \\\\\\
+        \item $f(x)=(2x+4)(x-1), f(4)=?$
+
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{25} % continues numbering
+        \item $f(x)=(x+1)^2, f(2+x)=?$
+        \\\\\\
+        \item $f(x)=x(2x+1)^2, f(0)=?$
+        \\\\\\
+        \item $f(x)=(2x+4)^2, f(x+1)=?$
+
+    \end{enumerate}
+\end{minipage}
 \end{document}
