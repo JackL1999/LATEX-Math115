@@ -2,10 +2,17 @@
 \usepackage{tikz}
 \usepackage{tkz-euclide}
 \usepackage{pgfplots}
-\usepackage{graphicx}
+\usepackage{fancyhdr}
 
+\usepackage{graphicx}
 \usetikzlibrary{arrows.meta}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name} % Left header with name
+\fancyhead[R]{Septermber 14th 2025} % Right header with date
 \begin{document}
+\section{Graph 1}
+
 \begin{tikzpicture}
 \begin{axis}[
   axis lines=middle,
@@ -23,6 +30,7 @@
 \end{tikzpicture}
 
 \vspace{1cm}
+\section{Graph 2}
 
 \begin{tikzpicture}
 \begin{axis}[
@@ -51,6 +59,7 @@
 \end{tikzpicture}
 
 \vspace{1cm}
+\section{Graph 3}
 
 \begin{tikzpicture}
 \begin{axis}[
@@ -75,6 +84,7 @@
 \end{tikzpicture}
 
 \vspace{1cm}
+\section{Blank graph 1}
 
 \begin{tikzpicture}
   % axis
@@ -86,7 +96,7 @@
 \end{tikzpicture}
 
 \vspace{1cm}
-
+\section{Many Graphs}
 \begin{tikzpicture}[scale=0.60]
         \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
         \draw[line width=0.5mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
@@ -105,7 +115,7 @@
     \end{tikzpicture}
 
 \vspace{1cm}
-
+\section{Blank Graph 2}
 \begin{tikzpicture}
         \draw[gray!15,step=1cm] (-8,-8) grid (8,8);    
         \draw[line width=0.5mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
@@ -116,7 +126,7 @@
 \end{tikzpicture}
 
 \vspace{1cm}
-
+\section{Vector Graphs}
 \begin{tikzpicture}
 			[
 				xscale=0.6,
@@ -155,7 +165,7 @@
 		\end{tikzpicture}
 
 \vspace{1cm}
-
+\section{Simple Table}
 \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|c|c|}
         \hline
@@ -167,7 +177,7 @@
 \end{center}
 
 \vspace{8cm}
-
+\section{Inserting Image}
 Here is a picture of a cat, scaled to 50\% of its original size.
 
 \begin{figure}[h!]
