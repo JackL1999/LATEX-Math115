@@ -1,0 +1,188 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage[left=1in, right=1in, top=1.5in, bottom=1in]{geometry}
+\usepackage{tikz}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{array}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name:} % Left header with name
+\fancyhead[R]{September 16th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 6} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 3 Section 3 \\
+    \normalsize Algebra of Functions
+\end{center}
+
+\begin{center}
+\setlength{\extrarowheight}{3pt}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.3\textwidth}|>{\centering\arraybackslash}p{0.3\textwidth}|>{\centering\arraybackslash}p{0.3\textwidth}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Algebraic Rules (better table)}} \\
+\hline
+$ax + bx = (a+b)x$ & $a(bx) = abx$ & $a(b+c) = ab+ac$ \\
+
+\hline
+$x^a \cdot x^b= x^{a+b}$ & $(x^a)^b = x^{ab}$ & $(xy)^a = x^a y^a$ \\
+\hline
+$x^{-a} = \frac{1}{x^a}$ & $\frac{x^a}{x^b} = x^{a-b}$ & $\left(\frac{x}{y}\right)^a = \frac{x^a}{y^a}$ \\
+\hline
+\multicolumn{3}{|c|}{$(x+y)^2 \longrightarrow (x+y)(x+y) \longrightarrow x(x+y) + y(x+y) \longrightarrow x^2+xy+xy+y^2 \longrightarrow x^2 +2xy + y^2$} \\
+\hline
+\end{tabular}
+\end{center}
+
+\noindent
+\textbf{Section 1:}
+\\
+Given the following functions $f(x)=x^2+x, g(x)=2-4x, h(x)=x^2-1, p(x)=x+6,k(x)=2x+2$\\
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \item Find $f(g(2))$
+        \\\\
+              $\mathbf{30}$
+        \\\\
+        \item Find $g(f(2))$
+        \\\\
+              $\mathbf{-22}$
+        \\\\
+        \item Find $h(k(-4))$
+        \\\\
+              $\mathbf{35}$
+        
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{4} % continues numbering
+        \item Find $f(g(x))$
+        \\\\
+              $\mathbf{16x^2-20+6}$
+        \\\\
+        \item Find $g(f(x))$
+        \\\\
+              $\mathbf{-4x^2-4x+2}$
+        \\\\
+        \item Find $h(k(x))$
+        \\\\
+              $\mathbf{4x^2+8x+3}$
+        
+    \end{enumerate}
+\end{minipage}
+
+\noindent
+\vspace{1cm}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{7}
+        \item Find $k(h(-4))$
+        \\\\
+              $\mathbf{32}$
+        \\\\
+        \item Find $p(f(2))$
+        \\\\
+              $\mathbf{12}$
+        \\\\
+        \item Find $f(p(1))$
+        \\\\
+              $\mathbf{56}$
+        
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{11} % continues numbering
+        \item Find $k(h(x))$
+        \\\\
+              $\mathbf{2x^2}$
+        \\\\
+        \item Find $p(f(x))$
+        \\\\
+              $\mathbf{x^2+x+6}$
+        \\\\
+        \item Find $f(p(x))$
+        \\\\
+              $\mathbf{x^2+13x+42}$
+        
+    \end{enumerate}
+\end{minipage}
+
+\vspace{10cm}
+\noindent
+\textbf{Section 2:}
+\\
+Given the following functions $f(x)=x^2+x, g(x)=2-4x, h(x)=x^2-1, p(x)=x+6,k(x)=2x+2$
+\\\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{14}
+        \item Find $f(x)\cdot g(x)$
+        \\\\\\\\
+        \item Find $g(-x) + h(x^2)$
+        \\\\\\\\
+        \item Find $k(x) \cdot k(x)$
+        
+        
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{18} % continues numbering
+        \item Find $g(x)\cdot f(x)$
+        \\\\\\\\
+        \item Find $p(x)+g(2x)$
+        \\\\\\\\
+        \item Find $h(x)\cdot p(x)$
+        
+        
+
+    \end{enumerate}
+\end{minipage}
+
+\vspace{4cm}
+\noindent
+\textbf{Section 3:}
+\\
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{22}
+        \item Find $f(x)(g(x)+k(x))$
+        \\\\\\\\
+        \item Find $g(x)(f(x)+k(x))$
+        \\\\\\\\
+        \item Find $k(x)(f(x)+g(x))$
+        
+        
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{25} % continues numbering
+        \item Find $f(k(x)) + p(h(x))$
+        \\\\\\\\
+        \item Find $f(f(x)) - k(k(x))$
+        \\\\\\\\
+        \item Find $h(x)f(x) + p(x)k(x)$
+        
+        
+    \end{enumerate}
+\end{minipage}
+\end{document}
