@@ -13,6 +13,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{mdframed}
+\pgfplotsset{compat=1.18}
 
 \pagestyle{fancy}
 \fancyhf{} % Clear all header and footer fields
@@ -72,39 +73,52 @@ Find the average rate of change between two Points, label each coordinate then g
     height=8cm, 
     width=15cm,  
     % Set the domain and range for the axes
-    xmin=-4.5, xmax=3.5,
+    xmin=-4.2, xmax=3.2,
     ymin=-22, ymax=32,
     % Manually set the tick marks
     xtick={-4,-3,-2,-1,0,1,2,3},
     ytick={-20,-10,0,10,20,30},
     % Add 5 minor lines between each major tick on both axes
-    minor x tick num=5,
-    minor y tick num=5,
+    minor x tick num=4,
+    minor y tick num=4,
     % This command draws both major and minor grid lines
     grid=both,
-    major grid style={line width=.1pt,draw=gray!40},
-    minor grid style={line width=.1pt,draw=gray!15},
+    major grid style={line width=.1pt,draw=gray!80},
+    minor grid style={line width=.1pt,draw=gray!40},
     % Axis and label styling
     axis lines=middle,
     tick label style={font=\tiny},
     xlabel style={at={(current axis.right of origin)}, anchor=west},
     ylabel style={at={(current axis.above origin)}, anchor=south},
-    axis line style={-stealth},
+    axis line style={-stealth}
 ]
 
 \addplot[domain=-4.5:3.5, smooth, thick, red] {(1/2)*(x)*(x-3)*(x+3)*(x+2)};
-    
-\addplot[only marks, mark=*, blue, nodes near coords]
-  coordinates {
-    (-4, 28)
-    (-3, 0)
-    (-2, 0)
-    (-1, 4)
-    (0, 0)
-    (1, -12)
-    (2, -20)
-    (3, 0)
-  };
+\draw[fill=blue, draw=blue] (-4, 28)   circle (2pt) 
+      node[xshift=8pt, yshift=0pt, font=\small] {A};
+
+\draw[fill=blue, draw=blue] (-3, 0)    circle (2pt) 
+      node[xshift=0pt, yshift=8pt,font=\small] {B};
+
+\draw[fill=blue, draw=blue] (-2, 0)    circle (2pt) 
+      node[xshift=0pt, yshift=8pt, font=\small] {C};
+
+\draw[fill=blue, draw=blue] (-1, 4)    circle (2pt) 
+      node[xshift=0pt, yshift=8pt, font=\small] {D};
+
+\draw[fill=blue, draw=blue] (0, 0)     circle (2pt) 
+      node[xshift=8pt, yshift=8pt, font=\small] {E};
+
+\draw[fill=blue, draw=blue] (1, -12)   circle (2pt) 
+      node[xshift=0pt, yshift=8pt, font=\small] {F};
+
+\draw[fill=blue, draw=blue] (2, -20)   circle (2pt) 
+      node[xshift=0pt, yshift=8pt, font=\small] {G};
+
+\draw[fill=blue, draw=blue] (3, 0)     circle (2pt) 
+      node[xshift=-8pt, yshift=8pt, font=\small] {H};
+
+
 \end{axis}
 \end{tikzpicture}
 
