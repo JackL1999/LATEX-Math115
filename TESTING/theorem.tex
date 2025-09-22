@@ -9,8 +9,12 @@
 \usepackage{enumerate}
 \usepackage{enumitem}
 \usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{fancybox}
 
 \newmdtheoremenv{theo}{Theorem}
+\newtheorem{definition}{Definition}
+\surroundwithmdframed{definition}
 
 \begin{document}
 
@@ -31,5 +35,51 @@ coordinate points of the form (x,0) on the curve are x-intercepts,
 ]
 \textbf{Definition.} \textit{Given a graph in the coordinate plane, coordinate points of the form (x,0) on the curve are x-intercepts, and coordinate points of the form (0,y) on the curve are y-intercepts.}
 \end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Definition.} \textit{Given a graph in the coordinate plane, coordinate points of the form (x,0) on the curve are x-intercepts, and coordinate points of the form (0,y) on the curve are y-intercepts.}
+\end{tcolorbox}
+
+\section*{Example Definitions}
+
+\begin{definition}
+  A **prime number** is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+
+\begin{definition}
+  An **Euclidean space** is the fundamental space of geometry, intended to represent the three-dimensional space of ordinary experience.
+\end{definition}
+
+\begin{definition}
+  A **group** is a set of elements together with an operation that combines any two of its elements to form a third element, and that satisfies four conditions called the group axioms.
+\end{definition}
+
+\section*{Example Definitions}
+
+\fbox{\textbf{Definition}\\[1ex]
+A **prime number** is a natural number greater than 1 that has no positive divisors other than 1 and itself.}
+
+\vspace{1em}
+
+\fbox{\textbf{Definition}\\[1ex]
+An **Euclidean space** is the fundamental space of geometry, intended to represent the three-dimensional space of ordinary experience.}
+
+\section*{Simple Boxed Definition}
+
+\fbox{\parbox{0.9\linewidth}{
+  \textbf{Definition}\\[0.5em]
+  A **prime number** is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+}}
+
+\vspace{1em}
+
+\fbox{\parbox{0.9\linewidth}{
+  \textbf{Definition}\\[0.5em]
+  An **Euclidean space** is the fundamental space of geometry, intended to represent the three-dimensional space of ordinary experience.
+}}
+
+\begin{mdframed}
+\textbf{Definition.} \textit{Given a graph in the coordinate plane, coordinate points of the form (x,0) on the curve are x-intercepts, and coordinate points of the form (0,y) on the curve are y-intercepts.}
+\end{mdframed}
 
 \end{document}

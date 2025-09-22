@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tcolorbox}
+
+% Define a new environment for unnumbered definitions
+\newtcolorbox{definition}{
+  colback=gray!5,        % Background color
+  colframe=black,         % Frame color
+  boxsep=5pt,             % Space between frame and content
+  boxrule=0.5pt,          % Thickness of the frame
+  title=\textbf{Definition}, % The title of the box
+  fonttitle=\normalfont,
+  arc=3pt,                % Rounded corners
+  top=4pt,                % Top margin inside the box
+  bottom=4pt,             % Bottom margin inside the box
+}
+
+\begin{document}
+
+\section*{Example Definitions}
+
+\begin{definition}
+  A **prime number** is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+
+\begin{definition}
+  An **Euclidean space** is the fundamental space of geometry, intended to represent the three-dimensional space of ordinary experience.
+\end{definition}
+
+\end{document}
