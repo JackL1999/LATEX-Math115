@@ -127,7 +127,6 @@ KEY: I\_LIKE\_BONUS\_POINTS
 \begin{tabularx}{\textwidth}{|*{14}{W|}} % 14 Left-aligned (L) columns
 \hline
 \textbf{-20} & \textbf{-18} & \textbf{-16} & \textbf{-13} & \textbf{-11} & \textbf{-10} & \textbf{-7} & \textbf{-6} & \textbf{-5} & \textbf{-4} & \textbf{-3} & \textbf{-2} & \textbf{-1} & \textbf{0} \\
-\hline
 J & R & Y & C & S & D & Q & G & T & A & K & N & I & \_ \\
 \hline
 \end{tabularx}
@@ -139,11 +138,53 @@ J & R & Y & C & S & D & Q & G & T & A & K & N & I & \_ \\
 \begin{tabularx}{\textwidth}{|*{14}{W|}} % 14 Left-aligned (L) columns
 \hline
 \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{10} & \textbf{11} & \textbf{13} & \textbf{16} & \textbf{18} & \textbf{20} & \textbf{---} \\
-\hline
 U & H & V & W & O & L & E & B & M & F & P & Z & ? & --- \\
 \hline
 \end{tabularx}
+\renewcommand{\labelenumi}{\#\arabic{enumi}}
+\vspace{10cm}
+\section*{Find the slope of each line}
+\begin{minipage}[t]{0.6\textwidth}
+    \begin{enumerate}
+        \item (P1-P2) = \textbf{3}
+        \\\\\\\\
+        \item (P1-P3) = \textbf{-2}
+        \\\\\\\\
+        \item (P1-P4) = \textbf{5}
+        \\\\\\\\
+        \item (P1-P5) = \textbf{-13}
+        \\\\\\\\
+        \item (P2-P3) = \textbf{0}
+        \\\\\\\\
+        \item (P2-P4) = \textbf{7}
+        \\\\\\\\
+        \item (P2-P5) = \textbf{-5}
+        \\\\\\\\
+        \item (P3-P4) = \textbf{2}
+    \end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{0.6\textwidth}
+    \begin{enumerate}[\#1]
+        \setcounter{enumi}{7} % continues numbering
+        \item (P3-P5) = \textbf{20}
+        \\\\\\\\
+        \item (P4-P5) = \textbf{-1}
+        \\\\\\\\
+        \item = (\#1 + \#2) = \textbf{5}
+        \\\\\\\\
+        \item = (\#3 + \#4) = \textbf{1}
+        \\\\\\\\
+        \item = (\#5 + \#6) =\textbf{-11}
+        \\\\\\\\
+        \item = (\#7 + \#8) = \textbf{16}
+        \\\\\\\\
+        \item = (\#9 + \#1) = \textbf{10}
+        \\\\\\\\
+        \item = (\#4 + \#8) = \textbf{4}
 
+    \end{enumerate}
+\end{minipage}
+\vspace{2cm}
 \section*{Write out the solution}
 
 
@@ -154,25 +195,50 @@ U & H & V & W & O & L & E & B & M & F & P & Z & ? & --- \\
 \noindent \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad ?
 \\\\
 \noindent % Prevents indentation before the table
-\begin{tabularx}{\textwidth}{|*{14}{W|}} % 14 Left-aligned (L) columns
+\begin{tabular}{|*{14}{W|}} 
 \hline
-& & & & & & & & & & & & \\
+% ROW 1: Empty Header Row
+& & & & & & & & & & & & & \\
 \hline
-C & A & N & \_ & I & \_ & H & A & V & E & \_ & T & W & O \\
+% ROW 2: Content Row - 14 items exactly
+\textbf{C} & \textbf{A} & \textbf{N} & \textbf{\_} & \textbf{I} & \textbf{\_} & \textbf{H} & \textbf{A} & \textbf{V} & \textbf{E} & \textbf{\_} & \textbf{T} & \textbf{W} & \textbf{O} \\
 \hline
-\end{tabularx}
+\end{tabular}
 
 \vspace{1em} % Add vertical space between tables
 
 % --- Table 2: Columns 15-28 (14 columns) ---
 \noindent
-\begin{tabular}{|*{13}{W|}} 
+\begin{tabular}{|*{14}{W|}} 
 \hline
-\multicolumn{13}{|c|}{\textbf{BONUS POINTS ?}} \\
+& & & & & & & & & & & & & \\
 \hline
 % ROW 2: Letters - 13 Items exactly. The space is omitted for brevity.
-\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & \textbf{S} & \textbf{P} & \textbf{O} & \textbf{I} & \textbf{N} & \textbf{T} & \textbf{S} & \textbf{?} & \textbf{\_} \\
+\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & \textbf{S} & \textbf{\_} & \textbf{P} & \textbf{O} & \textbf{I} & \textbf{N} & \textbf{T} & \textbf{S} & \textbf{?} & \textbf{\_} \\
 \hline
 \end{tabular}
 
+\section*{Line Table Key}
+\begin{tabular}{|*{14}{W|}} 
+\hline
+% ROW 1: Empty Header Row
+& & & & & & & & & & & & & \\
+\hline
+% ROW 2: Content Row - 14 items exactly
+\textbf{C} & \textbf{A} & \textbf{N} & \textbf{\_} & \textbf{I} & \textbf{\_} & \textbf{H} & \textbf{A} & \textbf{V} & \textbf{E} & \textbf{\_} & \textbf{T} & \textbf{W} & \textbf{O} \\
+\hline
+\end{tabular}
+
+\vspace{1em} % Add vertical space between tables
+
+% --- Table 2: Columns 15-28 (14 columns) ---
+\noindent
+\begin{tabular}{|*{14}{W|}} 
+\hline
+& & & & & & & & & & & & & \\
+\hline
+% ROW 2: Letters - 13 Items exactly. The space is omitted for brevity.
+\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & \textbf{S} & \textbf{\_} & \textbf{P} & \textbf{O} & \textbf{I} & \textbf{N} & \textbf{T} & \textbf{S} & \textbf{?} & \textbf{\_} \\
+\hline
+\end{tabular}
 \end{document}
