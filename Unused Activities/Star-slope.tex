@@ -145,4 +145,34 @@ U & H & V & W & O & L & E & B & M & F & P & Z & ? & --- \\
 \end{tabularx}
 
 \section*{Write out the solution}
+
+
+% Optional: A simpler, non-grid version for pure console display:
+% \vspace{1cm}
+\newcolumntype{W}{>{\centering\arraybackslash}p{0.7cm}} 
+
+\noindent \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \rule{0.3cm}{0.4pt} \quad ?
+\\\\
+\noindent % Prevents indentation before the table
+\begin{tabularx}{\textwidth}{|*{14}{W|}} % 14 Left-aligned (L) columns
+\hline
+& & & & & & & & & & & & \\
+\hline
+C & A & N & \_ & I & \_ & H & A & V & E & \_ & T & W & O \\
+\hline
+\end{tabularx}
+
+\vspace{1em} % Add vertical space between tables
+
+% --- Table 2: Columns 15-28 (14 columns) ---
+\noindent
+\begin{tabular}{|*{13}{W|}} 
+\hline
+\multicolumn{13}{|c|}{\textbf{BONUS POINTS ?}} \\
+\hline
+% ROW 2: Letters - 13 Items exactly. The space is omitted for brevity.
+\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & \textbf{S} & \textbf{P} & \textbf{O} & \textbf{I} & \textbf{N} & \textbf{T} & \textbf{S} & \textbf{?} & \textbf{\_} \\
+\hline
+\end{tabular}
+
 \end{document}
