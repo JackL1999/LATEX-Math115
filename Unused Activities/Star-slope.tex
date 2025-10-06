@@ -61,16 +61,19 @@ KEY: I\_LIKE\_BONUS\_POINTS
     % Add 5 minor lines between each major tick on both axes
     minor x tick num=1,
     minor y tick num=4,
+     % Axis and label styling
+    axis lines=middle,
+    tick label style={font=\small},
     % This command draws both major and minor grid lines
     grid=both,
-    major grid style={line width=.1pt,draw=gray!80},
-    minor grid style={line width=.1pt,draw=gray!40},
+    major grid style={line width=0.5pt,draw=gray!80},
+    minor grid style={line width=0.5pt,draw=gray!80},
     % Axis and label styling
     axis lines=middle,
-    tick label style={font=\tiny},
+    tick style={draw=black, major tick length=8pt, minor tick length=6pt}, 
     xlabel style={at={(current axis.right of origin)}, anchor=west},
     ylabel style={at={(current axis.above origin)}, anchor=south},
-    axis line style={-stealth}
+    axis line style={-stealth, line width=1.2pt}
 ]
 
 % --- LINES STARTING AT P1 (0, 15) ---
@@ -106,18 +109,18 @@ KEY: I\_LIKE\_BONUS\_POINTS
     coordinates {
         (0,15)
         (3,9)
-        (-2,9)
-        (-4,-5)
         (2,-11)
+        (-4,-5)
+        (-2,9)
     };
 
 % --- 3. ADD LABELS (P1, P2, P3, P4, P5) ---
 % Labels are positioned slightly above/below the points for clarity.
-\node[above, font=\footnotesize] at (axis cs:0,15) {P1};
-\node[above right, font=\footnotesize] at (axis cs:3,9) {P2};
-\node[above left, font=\footnotesize] at (axis cs:-2,9) {P3};
-\node[below, font=\footnotesize] at (axis cs:-4,-5) {P4};
-\node[below right, font=\footnotesize] at (axis cs:2,-11) {P5};
+\node[right, font=\footnotesize] at (axis cs:3,9.5) {P1};
+\node[right, font=\footnotesize] at (axis cs:0,15.5) {P2};
+\node[left, font=\footnotesize] at (axis cs:-2,9.5) {P3};
+\node[left, font=\footnotesize] at (axis cs:-4,-5.5) {P4};
+\node[right, font=\footnotesize] at (axis cs:2,-11.5) {P5};
 
 \end{axis}
 \end{tikzpicture}
@@ -177,7 +180,10 @@ G & H & V & K & E & L
 \begin{tabular}{|*{14}{W|}} 
 \hline
 % ROW 1: Empty Header Row
-\textbf{\#4} & \textbf{\#7} & \textbf{\#2} & \textbf{\#5} & \textbf{\#10} & \textbf{\#5} & \textbf{\#8} & \textbf{\#7} & \textbf{\#1} & \textbf{\#3} & \textbf{\#5} & \textbf{\#12} & \textbf{\#15} & \textbf{\#9} \\
+\textbf{\#7} & \textbf{\#9} & \textbf{\#1} & \textbf{\#2} & 
+\textbf{\#10} & \textbf{\#2} & \textbf{\#3} & \textbf{\#9} & 
+\textbf{\#5} & \textbf{\#6} & \textbf{\#2} & 
+\textbf{\#12} & \textbf{\#15} & \textbf{\#20} \\
 
 \hline
 % ROW 2: Content Row - 14 items exactly
@@ -191,24 +197,32 @@ G & H & V & K & E & L
 \noindent
 \begin{tabular}{|*{14}{W|}} 
 \hline
-\textbf{\#6} & \textbf{\#9} & \textbf{\#2} & \textbf{\#11} & \textbf{\#13} & \textbf{\#5} & \textbf{\#14} & \textbf{\#9} & \textbf{\#10} & \textbf{\#2} & \textbf{\#12} & \textbf{\#13} & \textbf{\#16} & \textbf{:D} \\
+\textbf{\#8} & \textbf{\#4} & \textbf{\#1} & \textbf{\#11} & 
+\textbf{\#13} & \textbf{\#2} & \textbf{\#14} & \textbf{\#4} & 
+\textbf{\#10} & \textbf{\#1} & \textbf{\#12} & 
+\textbf{\#13} & \textbf{\#16} & \textbf{:D} \\
 \hline
 % ROW 2: Letters - 13 Items exactly. The space is omitted for brevity.
 & & & & & & & & & & & & & \\
 \hline
 \end{tabular}
-
 \begin{comment}
 \section*{Line Table Key}
 \noindent % Prevents indentation before the table
 \begin{tabular}{|*{14}{W|}} 
 \hline
 % ROW 1: Empty Header Row
-\textbf{\#4} & \textbf{\#7} & \textbf{\#2} & \textbf{\#5} & \textbf{\#10} & \textbf{\#5} & \textbf{\#8} & \textbf{\#7} & \textbf{\#1} & \textbf{\#3} & \textbf{\#5} & \textbf{\#12} & \textbf{\#15} & \textbf{\#9} \\
+\textbf{\#7} & \textbf{\#9} & \textbf{\#1} & \textbf{\#2} & 
+\textbf{\#10} & \textbf{\#2} & \textbf{\#3} & \textbf{\#9} & 
+\textbf{\#5} & \textbf{\#6} & \textbf{\#2} & 
+\textbf{\#12} & \textbf{\#15} & \textbf{\#20} \\
 
 \hline
 % ROW 2: Content Row - 14 items exactly
-\textbf{C} & \textbf{A} & \textbf{N} & \textbf{\_} & \textbf{I} & \textbf{\_} & \textbf{H} & \textbf{A} & \textbf{V} & \textbf{E} & \textbf{\_} & \textbf{T} & \textbf{W} & \textbf{O} \\
+\textbf{C} & \textbf{A} & \textbf{N} & \textbf{\_} & 
+\textbf{I} & \textbf{\_} & \textbf{H} & \textbf{A} & 
+\textbf{V} & \textbf{E} & \textbf{\_} &
+\textbf{T} & \textbf{W} & \textbf{O} \\
 \hline
 \end{tabular}
 
@@ -218,10 +232,16 @@ G & H & V & K & E & L
 \noindent
 \begin{tabular}{|*{14}{W|}} 
 \hline
-\textbf{\#6} & \textbf{\#9} & \textbf{\#2} & \textbf{\#11} & \textbf{\#13} & \textbf{\#5} & \textbf{\#14} & \textbf{\#9} & \textbf{\#10} & \textbf{\#2} & \textbf{\#12} & \textbf{\#13} & \textbf{\#16} & \textbf{:D} \\
+\textbf{\#8} & \textbf{\#4} & \textbf{\#1} & \textbf{\#11} & 
+\textbf{\#13} & \textbf{\#2} & \textbf{\#14} & \textbf{\#4} & 
+\textbf{\#10} & \textbf{\#1} & \textbf{\#12} & 
+\textbf{\#13} & \textbf{\#16} & \textbf{:D} \\
 \hline
 % ROW 2: Letters - 13 Items exactly. The space is omitted for brevity.
-\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & \textbf{S} & \textbf{\_} & \textbf{P} & \textbf{O} & \textbf{I} & \textbf{N} & \textbf{T} & \textbf{S} & \textbf{?} & \textbf{:D} \\
+\textbf{B} & \textbf{O} & \textbf{N} & \textbf{U} & 
+\textbf{S} & \textbf{\_} & \textbf{P} & \textbf{O} & 
+\textbf{I} & \textbf{N} & \textbf{T} & 
+\textbf{S} & \textbf{?} & \textbf{:D} \\
 \hline
 \end{tabular}
 \end{comment}
@@ -229,86 +249,85 @@ G & H & V & K & E & L
 \section*{Find the slope of each line}
 \begin{minipage}[t]{0.6\textwidth}
     \begin{enumerate}
-        \item = (P1-P2) = 
+        \item (P1-P2) =
         \\\\\\\\
-        \item = (P1-P3) = 
+        \item (P1-P3) =
         \\\\\\\\
-        \item = (P1-P4) =
+        \item (P1-P4) =
         \\\\\\\\
-        \item = (P1-P5) = 
+        \item (P1-P5) =
         \\\\\\\\
-        \item = (P2-P3) = 
+        \item (P2-P3) =
         \\\\\\\\
-        \item = (P2-P4) =
+        \item (P2-P4) =
         \\\\\\\\
-        \item = (P2-P5) = 
+        \item (P2-P5) =
         \\\\\\\\
-        \item = (P3-P4) = 
+        \item (P3-P4) =
     \end{enumerate}
 \end{minipage}
 \begin{minipage}[t]{0.6\textwidth}
     \begin{enumerate}[\#1]
         \setcounter{enumi}{8} % continues numbering
-        \item = (P3-P5) =
+        \item (P3-P5) =
         \\\\\\\\
-        \item = (P4-P5) =
+        \item (P4-P5) =
         \\\\\\\\
-        \item = (\#10 + \#7) = 
+        \item = (\#10 - \#6) =
         \\\\\\\\
-        \item = (\#2 - \#8) = 
+        \item = (\#1 - \#3) =
         \\\\\\\\
-        \item = (\#1 + \#3) = 
+        \item = (\#7 + \#5) =
         \\\\\\\\
-        \item = (\#7 + \#9) =
+        \item = (\#9 + \#4) =
         \\\\\\\\
-        \item = (\#8 $\cdot$ \#3) = 
+        \item = (\#3 $\cdot$ \#6) =
         \\\\\\\\
-        \item = (\#2 - \#6) = 
+        \item = (\#1 - \#8) =
 
     \end{enumerate}
 \end{minipage}
 \begin{comment}
 \begin{minipage}[t]{0.6\textwidth}
     \begin{enumerate}
-        \item (P1-P2) = \textbf{3 == V}
+        \item (P1-P2) = \textbf{-2 == N}
         \\\\\\\\
-        \item (P1-P3) = \textbf{-2 == N}
+        \item (P1-P3) = \textbf{0 == \_\_\_}
         \\\\\\\\
-        \item (P1-P4) = \textbf{5 == E}
+        \item (P1-P4) = \textbf{2 == H}
         \\\\\\\\
-        \item (P1-P5) = \textbf{-13 == C}
+        \item (P1-P5) = \textbf{20 == O}
         \\\\\\\\
-        \item (P2-P3) = \textbf{0 == \_\_\_}
+        \item (P2-P3) = \textbf{3 == V}
         \\\\\\\\
-        \item (P2-P4) = \textbf{7 == B}
+        \item (P2-P4) = \textbf{5 == E}
         \\\\\\\\
-        \item (P2-P5) = \textbf{-5 == A}
+        \item (P2-P5) = \textbf{-13 == C}
         \\\\\\\\
-        \item (P3-P4) = \textbf{2 == H}
+        \item (P3-P4) = \textbf{7 == B}
     \end{enumerate}
 \end{minipage}
 \begin{minipage}[t]{0.6\textwidth}
     \begin{enumerate}[\#1]
         \setcounter{enumi}{8} % continues numbering
-        \item (P3-P5) = \textbf{20 == O}
+        \item (P3-P5) = \textbf{-5 == A}
         \\\\\\\\
         \item (P4-P5) = \textbf{-1 == I}
         \\\\\\\\
-        \item = (\#10 + \#7) = \textbf{-6 == U}
+        \item = (\#10 - \#6) = \textbf{-6 == U}
         \\\\\\\\
-        \item = (\#2 - \#8) = \textbf{-4 == T}
+        \item = (\#1 - \#3) = \textbf{-4 == T}
         \\\\\\\\
-        \item = (\#1 + \#3) = \textbf{-10 == S}
+        \item = (\#7 + \#5) = \textbf{-10 == S}
         \\\\\\\\
-        \item = (\#7 + \#9) =\textbf{15 == P}
+        \item = (\#9 + \#4) =\textbf{15 == P}
         \\\\\\\\
-        \item = (\#8 $\cdot$ \#3) = \textbf{10 == W }
+        \item = (\#3 $\cdot$ \#6) = \textbf{10 == W }
         \\\\\\\\
-        \item = (\#2 - \#6) = \textbf{-9 == ?}
+        \item = (\#1 - \#8) = \textbf{-9 == ?}
 
     \end{enumerate}
 \end{minipage}
 \end{comment}
-
 
 \end{document}
