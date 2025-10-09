@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}                         
+\pagestyle{plain} %-- Document Set Up Command
+
+%-- Document Setup & Layout
+\usepackage{geometry}    
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage[letterpaper,left=1in,right=1in,textheight=9.5in]{geometry}
+
+%-- Color & Text Formatting
+\usepackage[svgnames]{xcolor} 
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{ulem}
+
+%-- Math Packages
+\usepackage{amsmath}     
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+%-- Graphics and Figures
+\usepackage{graphicx}    
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{circledtext}
+
+%-- Tables
+\usepackage{array}      
+\usepackage{tabularx}
+
+%-- Lists
+\usepackage{enumitem}    
+\usepackage{enumerate}
+\usepackage{tasks}
+
+%-- TikZ Libraries
+\usetikzlibrary{shapes.geometric} 
+
+%-- Custom Commands
+\newcommand{\b}[1]{\mathbf{#1}}
+\newcommand{\vec2}[2]{\left[ \begin{array}{r} #1\\ #2\end{array}\right]}
+\newcommand{\vec3}[3]{\left[ \begin{array}{r} #1\\ #2\\ #3\end{array}\right]}
+\newcommand{\vec4}[4]{\left[ \begin{array}{r} #1\\ #2\\ #3\\ #4\end{array}\right]}
+\newcommand{\vec5}[5]{\left[ \begin{array}{r} #1\\ #2\\ #3\\ #4 \\#5\end{array}\right]}
+
+\newcommand{\matrix2}[4]{\left[ \begin{array}{rr} #1 & #2\\ #3 & #4\end{array}\right]}
+\newcommand{\matrix3}[9]{\left[ \begin{array}{rr} #1 & #2 & #3\\#1 & #5 & #6 \\ #7 & #8 & #9\end{array}\right]}
+
+\newcommand{\det2}[4]{\left| \begin{array}{rr} #1 & #2\\ #3 & #4\end{array}\right|}
+
+%\renewcommand{\labelenumi}{(\alph{enumi})}
+%\renewcommand{\labelenumii}{(\roman{enumii})}
+
+\newcommand{\boxtext}[1]{\fbox{\parbox{6.5in}{\raggedright #1}}}
+
+\newcommand{\dynamicovaltext}[1]{%
+    \tikz[baseline=(T.base)]{
+        \node[
+            draw,                   % Draws the border
+            ellipse,                % The shape is an ellipse (oval)
+            inner sep=3pt,          % Padding around the word (adjust this value for more or less space)
+            line width=0.5pt,       % Thickness of the line
+        ] (T) {#1};                 % The content
+    }%
+}
