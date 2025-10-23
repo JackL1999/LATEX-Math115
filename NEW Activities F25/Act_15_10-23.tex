@@ -1,0 +1,129 @@
+\documentclass{article}                         
+\pagestyle{plain}
+
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{geometry}    % Adjusts page margins and layout.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name} % Left header with name
+\fancyhead[R]{October 23th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 14} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 5 Section 1-2 \\
+    \normalsize Quadratics
+\end{center}
+
+\noindent
+\textbf{Section 2: Factoring a quadratic expression}\\
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when $a = 1$: \\} 
+\textit{When factoring, the form $x^2 + bx + c$ \\
+can be factored as $(x+m)(x+n)$\\
+with real numbers $p$ and $q$ such that: \\
+they both multiply to $c$ and yet both add to $b$}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when $a \neq 1$: \\} 
+\textit{When factoring, the form $\boldsymbol{a}x^2 + bx + c$ \\
+can be factored as $(x+m)(x+n)$\\
+with real numbers $p$ and $q$ such that: \\
+they both multiply to $\boldsymbol{a} \cdot c$ and yet both add to $b$}
+\end{tcolorbox}
+\end{minipage}
+
+
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \item Factor $x^2 + x - 6$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 - x - 6$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 - 9x + 20$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 7x + 6$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 - 2x - 80$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 - 13x + 42$
+        
+        
+    \end{enumerate}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}
+        \setcounter{enumi}{4} % continues numbering
+        \item Factor $x^2 - 4$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 2x - 120$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 22x + 120$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 18x + 32$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 26x + 160$
+        \\\\\\\\\\\\\\
+        \item Factor $x^2 + 33x + 200$
+        
+
+    \end{enumerate}
+\end{minipage}
+
+\begin{comment}
+Notes:
+- make ++ to ++, -- to +- table etc
+- double check forms
+- connect to zeros
+- similar thing but a is not 1 as before
+- show how graph is affected
+- (x-m)(x-n) to (x+m)(x+n)
+- backwards and expand to quadratic
+- factor vs quadratic formula worksheet
+\end{comment}
+\end{document}
