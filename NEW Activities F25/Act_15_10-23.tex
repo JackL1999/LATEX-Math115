@@ -1,4 +1,4 @@
-\documentclass{article}                         
+\documentclass[12pt]{article}                         
 \pagestyle{plain}
 
 \usepackage{amsmath}     % Enhanced math environments (e.g., align).
@@ -35,11 +35,11 @@
     \Large \textbf{Math 115E Activity 14} \\
     \vspace{0.2cm}
     \normalsize Chapter 5 Section 1-2 \\
-    \normalsize Quadratics
+    \normalsize Factoring Quadratics Part 2
 \end{center}
 
 \noindent
-\textbf{Section 2: Factoring a quadratic expression}\\
+\section*{How to factor quadratic equations}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
 \begin{tcolorbox}[
@@ -51,11 +51,12 @@
     top=1mm, bottom=1mm,    % Vertical padding
     arc=2mm                 % Corner radius
 ]
-\textbf{Quadratic factoring when $a = 1$: \\} 
+\textbf{Quadratic factoring when} $\mathbf{a = 1}$: \\ 
 \textit{When factoring, the form $x^2 + bx + c$ \\
 can be factored as $(x+m)(x+n)$\\
-with real numbers $p$ and $q$ such that: \\
-they both multiply to $c$ and yet both add to $b$}
+Start with real numbers $m$ and $n$ so: \\
+they both multiply to $c$ and both add to $b$\\
+There is not a value in front of either $x$}
 \end{tcolorbox}
 \end{minipage}%
 \hfill
@@ -69,48 +70,61 @@ they both multiply to $c$ and yet both add to $b$}
     top=1mm, bottom=1mm,    % Vertical padding
     arc=2mm                 % Corner radius
 ]
-\textbf{Quadratic factoring when $a \neq 1$: \\} 
+\textbf{Quadratic factoring when} $\mathbf{a \neq 1}$: \\ 
 \textit{When factoring, the form $\boldsymbol{a}x^2 + bx + c$ \\
-can be factored as $(x+m)(x+n)$\\
-with real numbers $p$ and $q$ such that: \\
-they both multiply to $\boldsymbol{a} \cdot c$ and yet both add to $b$}
+can be factored as $(px+m)(qx+n)$\\
+Start with two real numbers such that: \\
+multiply to $\boldsymbol{a} \cdot c$ and yet add to $b$ \\
+then we re-group the terms and factor}
 \end{tcolorbox}
 \end{minipage}
-
-
-\begin{minipage}[t]{0.45\textwidth}
+\noindent
+    Example:Factor $3x^2-11x+10$
     \begin{enumerate}
-        \item Factor $x^2 + x - 6$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 - x - 6$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 - 9x + 20$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 7x + 6$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 - 2x - 80$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 - 13x + 42$
-        
-        
+    \renewcommand{\labelenumi}{}
+    \item Step 1: Find the factors of $3*10=30$ that add up to $-11$, (Write the factors if needed)
+    \item Step 2: The factors of $30$ are: $\pm(1,30), \pm(2,15),\pm(3,10),\pm(5,6)$, \\
+          \hspace*{1.1cm} so the pair that adds to $-11$ is $-5$ and $-6$
+    \item Step 3: Rewrite the quadratic:                          \hspace*{120pt} $3x^2+(-6x-5x)+10=0$
+    \item Step 4: Regroup so that each group has a common factor: $(3x^2-6x)+(-5x+10)=0$
+    \item Step 5: Factor out a common term:                       \hspace*{100pt} $(3x)(x-2)-5(x-2)=0$
+    \item Step 6: Factor again with the $x-2$ term:               \hspace*{115pt}  $(3x-5)(x-2)=0 $
+    \item DONE: So starting with $3x^2-11x+10=0$, we got $(3x-5)(x-2)=0$
+    \item Note: If we arn't able to factor again in Step 5, then go back to Step 3 and swap the factor pair.
+
     \end{enumerate}
-\end{minipage}%
-\hfill
+\section*{Factor the following quadratic equations}
 \begin{minipage}[t]{0.45\textwidth}
-    \begin{enumerate}
-        \setcounter{enumi}{4} % continues numbering
-        \item Factor $x^2 - 4$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 2x - 120$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 22x + 120$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 18x + 32$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 26x + 160$
-        \\\\\\\\\\\\\\
-        \item Factor $x^2 + 33x + 200$
-        
+    \begin{enumerate}[\#1)]
+        \setcounter{enumi}{0} % continues numbering
+        \item  $x^2+10x+14$
+        \vspace{1em}
+        \item  $x^2-8x+7$
+        \vspace{1em}
+        \item  $x^2+x-35$
+        \vspace{1em}
+        \item  $3x^2+10x+8$
+        \vspace{1em}
+        \item  $2x^2-9x+10$
+        \vspace{1em}
+        \item  $2x^2-6x-20$
+        \end{enumerate}
+\end{minipage}%
+\hspace{1cm}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[\#1)]
+        \setcounter{enumi}{6} % continues numbering
+        \item  $9x^2-27x+18$
+        \vspace{1em}
+        \item  $4x^2-13x+10$
+        \vspace{1em}
+        \item  $2x^2-13x-7$
+        \vspace{1em}
+        \item  $4x^2+20x+25$
+        \vspace{1em}
+        \item  $3x^2-19x+20$
+        \vspace{1em}
+        \item  $8x^2-6x-9$
 
     \end{enumerate}
 \end{minipage}
