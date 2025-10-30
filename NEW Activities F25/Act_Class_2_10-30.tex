@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}                         
+\pagestyle{plain}
+
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{geometry}    % Adjusts page margins and layout.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name} % Left header with name
+\fancyhead[R]{October 23th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 14} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 5 Section 1-2 \\
+    \normalsize Factoring Quadratics Part 2
+\end{center}
+
+\noindent
+\section*{How to factor quadratic equations}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a = 1}$: \\ 
+\textit{When factoring, the form $x^2 + bx + c$ \\
+can be factored as $(x+m)(x+n)$\\
+Start with real numbers $m$ and $n$ so: \\
+they both multiply to $c$ and both add to $b$\\
+There is not a value in front of either $x$}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a \neq 1}$: \\ 
+\textit{When factoring, the form $\boldsymbol{a}x^2 + bx + c$ \\
+can be factored as $(px+m)(qx+n)$\\
+Start with two real numbers such that: \\
+multiply to $\boldsymbol{a} \cdot c$ and yet add to $b$ \\
+then we re-group the terms and factor}
+\end{tcolorbox}
+\end{minipage}
+\noindent
+    Example:Factor $3x^2-11x+10$
+    \begin{enumerate}
+    \renewcommand{\labelenumi}{}
+    \item Step 1: Find the factors of $3*10=30$ that add up to $-11$, (Write the factors if needed)
+    \item Step 2: The factors of $30$ are: $\pm(1,30), \pm(2,15),\pm(3,10),\pm(5,6)$, \\
+          \hspace*{1.1cm} so the pair that adds to $-11$ is $-5$ and $-6$
+    \item Step 3: Rewrite the quadratic:                          \hspace*{120pt} $3x^2+(-6x-5x)+10=0$
+    \item Step 4: Regroup so that each group has a common factor: $(3x^2-6x)+(-5x+10)=0$
+    \item Step 5: Factor out a common term:                       \hspace*{100pt} $(3x)(x-2)-5(x-2)=0$
+    \item Step 6: Factor again with the $x-2$ term:               \hspace*{115pt}  $(3x-5)(x-2)=0 $
+    \item DONE: So starting with $3x^2-11x+10=0$, we got $(3x-5)(x-2)=0$
+    \item Note: If we arn't able to factor again in Step 5, then go back to Step 3 and swap the factor pair.
+
+    \end{enumerate}
+\section*{Factor the following quadratic equations}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[\#1)]
+        \setcounter{enumi}{0} % continues numbering
+        \item  $x^2+{\color{red} 9}x+14$
+        \vspace{1em}
+        \item  $x^2-8x+7$
+        \vspace{1em}
+        \item  $x^2+x-{\color{red} 30}$
+        \vspace{1em}
+        \item  $3x^2+10x+8$
+        \vspace{1em}
+        \item  $2x^2-9x+10$
+        \vspace{1em}
+        \item  $2x^2-6x-20$
+        \end{enumerate}
+\end{minipage}%
+\hspace{1cm}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[\#1)]
+        \setcounter{enumi}{6} % continues numbering
+        \item  $9x^2-27x+18$
+        \vspace{1em}
+        \item  $4x^2-13x+10$
+        \vspace{1em}
+        \item  $2x^2-13x-7$
+        \vspace{1em}
+        \item  $4x^2+20x+25$
+        \vspace{1em}
+        \item  $3x^2-19x+20$
+        \vspace{1em}
+        \item  $8x^2-6x-9$
+
+    \end{enumerate}
+\end{minipage}
+
+\begin{comment}
+Notes:
+- make ++ to ++, -- to +- table etc
+- double check forms
+- connect to zeros
+- similar thing but a is not 1 as before
+- show how graph is affected
+- (x-m)(x-n) to (x+m)(x+n)
+- backwards and expand to quadratic
+- factor vs quadratic formula worksheet
+\end{comment}
+
+
+Find two numbers such that: \\
+the first number and the second number both multiply to 6,\\
+and the first plus the product of 4 and the second number give us -14
+\\\\
+\noindent
+Expand $(2x+3)(3x-1)$
+
+\end{document}
