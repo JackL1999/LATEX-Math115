@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}                         
+\pagestyle{plain}
+
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{geometry}    % Adjusts page margins and layout.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name} % Left header with name
+\fancyhead[R]{November 4th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Exam 2 Review} \\
+    \vspace{0.2cm}
+    \normalsize Jeoparty Planner \\
+\end{center}
+
+\noindent
+\section*{How to factor quadratic equations}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a = 1}$: \\ 
+\textit{When factoring, the form $x^2 + bx + c$ \\
+can be factored as $(x+m)(x+n)$\\
+Start with real numbers $m$ and $n$ so: \\
+they both multiply to $c$ and both add to $b$\\
+There is not a value in front of either $x$}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a \neq 1}$: \\ 
+\textit{When factoring, the form $\boldsymbol{a}x^2 + bx + c$ \\
+can be factored as $(px+m)(qx+n)$\\
+Start with two real numbers such that: \\
+multiply to $\boldsymbol{a} \cdot c$ and yet add to $b$ \\
+then we re-group the terms and factor}
+\end{tcolorbox}
+\end{minipage}
+
+
+\subsection*{Column 1}
+\begin{itemize}
+    \item[\$100]:
+    \item[\$200]:
+    \item[\$300]:
+    \item[\$400]:
+    \item[\$500]:
+\end{itemize}
+
+
+\subsection*{Column 2}
+\begin{itemize}
+    \item[\$100]:
+    \item[\$200]:
+    \item[\$300]:
+    \item[\$400]:
+    \item[\$500]:
+\end{itemize}
+
+
+\subsection*{Column 3}
+\begin{itemize}
+    \item[\$100]:
+    \item[\$200]:
+    \item[\$300]:
+    \item[\$400]:
+    \item[\$500]:
+\end{itemize}
+
+
+\subsection*{Column 4}
+\begin{itemize}
+    \item[\$100]:
+    \item[\$200]:
+    \item[\$300]:
+    \item[\$400]:
+    \item[\$500]:
+\end{itemize}
+
+
+\subsection*{Column 5}
+\begin{itemize}
+    \item[\$100]:
+    \item[\$200]:
+    \item[\$300]:
+    \item[\$400]:
+    \item[\$500]:
+\end{itemize}
+
+
+\end{document}
