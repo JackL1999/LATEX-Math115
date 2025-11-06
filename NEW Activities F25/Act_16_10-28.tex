@@ -1,0 +1,229 @@
+\documentclass[12pt]{article}                         
+\pagestyle{plain}
+
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+\usepackage[
+  letterpaper,
+  left=0.8in,
+  right=0.8in,
+  textheight=9.5in,
+  bmargin=0.5in  % Adjust this value to push the footer down
+]{geometry}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name:} % Left header with name
+\fancyhead[R]{October 28th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 16} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 5 \\
+    \normalsize Factoring Quadratics Part 2
+\end{center}
+\vspace{-0.5cm}
+\noindent
+\section*{How to factor quadratic equations}
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a = 1}$: \\ 
+\textit{When factoring, the form $x^2 + bx + c$ \\
+can be factored as $(x+m)(x+n)$\\
+Start with real numbers $m$ and $n$ so: \\
+they both multiply to $c$ and both add to $b$\\
+There is not a value in front of either $x$}
+\end{tcolorbox}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Quadratic factoring when} $\mathbf{a \neq 1}$: \\ 
+\textit{When factoring, the form $\boldsymbol{a}x^2 + bx + c$ \\
+can be factored as $(px+m)(qx+n)$\\
+Start with two real numbers such that: \\
+multiply to $\boldsymbol{a} \cdot c$ and yet add to $b$ \\
+then we re-group the terms and factor}
+\end{tcolorbox}
+\end{minipage}
+\noindent
+    \textbf{Example: We want to solve $\mathbf{3x^2-11x+10}$ by factoring}
+\begin{enumerate}[
+    leftmargin=1.75cm,
+    labelsep=0pt,
+    font=\bfseries
+    ]
+    \renewcommand{\labelenumi}{}
+    \item[Step 1: ] Find the factors of $3*10=30$ that add up to $-11$, (Write the factors if needed)
+    \item[Step 2: ] The factors of $30$ are: $\pm(1,30), \pm(2,15),\pm(3,10),\pm(5,6)$, \\
+                    so the pair that adds to $-11$ is $-5$ and $-6$
+    \item[Step 3: ] Rewrite the quadratic:                          \hspace*{160pt}  $3x^2+(-6x-5x)+10=0$
+    \item[Step 4: ] Regroup so that each group has a common factor: \hspace*{5pt} $(3x^2-6x)+(-5x+10)=0$
+    \item[Step 5: ] Factor out a common term:                       \hspace*{130pt}  $(3x)(x-2)-5(x-2)=0$
+    \item[Step 6: ] Factor again with the $x-2$ term:               \hspace*{135pt}       $(3x-5)(x-2)=0$
+    \item[Step 7: ] Solve for $x$, so we get $ 3x - 5 = 0$ and $x - 2 = 0$, giving us $x=\frac{5}{2}$ and $x=2$
+    \item[DONE: ] So starting with $3x^2-11x+10=0$, we get $(3x-5)(x-2)=0$
+    \item[NOTE: ] If we aren't able to factor out a common term or we dont get the same 
+                    expression in both parentheses in Step 5, then go back to Step 3 and swap the factor pair.
+
+\end{enumerate}
+\section*{Factor the following quadratic equations}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[label=\#\arabic*]
+        \setcounter{enumi}{0} % continues numbering
+        \item  $x^2+9x+14=0$
+        \vspace{0.75em}
+        \item  $x^2-8x+7=0$
+        \vspace{0.75em}
+        \item  $x^2+x-30=0$
+        \vspace{0.75em}
+        \item  $3x^2+10x+8=0$
+        \vspace{0.75em}
+        \item  $2x^2-9x+10=0$
+        \vspace{0.75em}
+        \item  $2x^2-6x-20=0$
+        \end{enumerate}
+\end{minipage}%
+\hspace{1cm}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[label=\#\arabic*]
+        \setcounter{enumi}{6} % continues numbering
+        \item  $9x^2-27x+18=0$
+        \vspace{0.75em}
+        \item  $4x^2-13x+10=0$
+        \vspace{0.75em}
+        \item  $2x^2-13x-7=0$
+        \vspace{0.75em}
+        \item  $4x^2+20x+25=0$
+        \vspace{0.75em}
+        \item  $3x^2-19x+20=0$
+        \vspace{0.75em}
+        \item  $8x^2-6x-9=0$
+
+    \end{enumerate}
+\end{minipage}
+
+\begin{comment}
+Notes:
+- make ++ to ++, -- to +- table etc
+- double check forms
+- connect to zeros
+- similar thing but a is not 1 as before
+- show how graph is affected
+- (x-m)(x-n) to (x+m)(x+n)
+- backwards and expand to quadratic
+- factor vs quadratic formula worksheet
+\end{comment}
+
+
+
+
+\noindent
+\section*{How to use the Quadratic Formula}
+
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{The Quadratic Formula}: \\
+\textit{If we are given any polynomial,which may not be factorable, in the form $ax^2+bx+c=0$\\
+We can solve this by using the quadratic formula
+$x = \displaystyle\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ \\
+We will either get $0,1$ or $2$ solutions for the $x$-values}
+\end{tcolorbox}
+\noindent
+    \textbf{Example: We want to solve $\mathbf{3x^2-11x+10}$ by using the Quadratic Formula}
+\begin{enumerate}[
+    leftmargin=1.75cm,
+    labelsep=0pt,
+    font=\bfseries
+    ]
+    \renewcommand{\labelenumi}{}
+
+    \item[Step 1: ] Identify the given coefficients: $a=3, b=-11, c=10$
+    \item[Step 2: ] \looseness=-1 Plug these into the formula: $x = $\scalebox{1.25}{$\frac{-(-11) \pm \sqrt{(-11)^2 - 4(3)(10)}}{2(3)} $ }
+    \item[Step 3: ] \looseness=-1 Simplify as much as we can $x = \displaystyle\frac{-11 \pm \sqrt{121-120}}{6} \longrightarrow x = \displaystyle\frac{11 \pm 1}{6}$
+    \item[Step 4: ] \looseness=-1 Obtain the solutions: $x = \displaystyle\frac{11 \pm 1}{6}$, so
+    $x_1 = \displaystyle\frac{11 + 1}{6} = \displaystyle\frac{12}{6} = 2$ and $x_2 = \displaystyle\frac{11 - 1}{6} = \displaystyle\frac{10}{6} = \frac{5}{3}$
+    \item[DONE: ] \looseness=-1 So starting with $3x^2-11x+10=0$, we get $x=\scalebox{1.25}{$\frac{5}{3}$}$ and $x=2$, which is the same as before!
+    \end{enumerate}
+\section*{Solve the following quadratic equations}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[label=\#\arabic*]
+        \setcounter{enumi}{0} % continues numbering
+        \item  $x^2+9x+14=0$
+        \vspace{2em}
+        \item  $x^2+4x+2=0$
+        \vspace{2em}
+        \item  $x^2+2x-1=0$
+        \vspace{2em}
+        \item  $x^2+x-30=0$
+        \vspace{2em}
+        \item  $2x^2-6x+3=0$
+        \vspace{2em}
+        \item  $2x^2-9x+10=0$
+        \end{enumerate}
+\end{minipage}%
+\hspace{1cm}
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{enumerate}[label=\#\arabic*]
+        \setcounter{enumi}{6} % continues numbering
+        \item  $4x^2-13x+10=0$
+        \vspace{2em}
+        \item  $4x^2+20x+25=0$
+        \vspace{2em}
+        \item  $10x^2+10x-10=0$
+        \vspace{2em}
+        \item  $8x^2-6x-9=0$
+        \vspace{2em}
+        \item  $4x^2-12x+3=0$
+        \vspace{2em}
+        \item  $2x^2+5x-4=0$
+
+    \end{enumerate}
+\end{minipage}
+\end{document}
