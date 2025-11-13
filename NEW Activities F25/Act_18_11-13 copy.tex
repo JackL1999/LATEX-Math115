@@ -1,55 +1,54 @@
-\documentclass{article} % Use the article class for a simple document
-\usepackage{amsmath}    % For enhanced math environments
-\usepackage{amsfonts}   % For mathematical fonts
-\usepackage{amssymb}    % For mathematical symbols
-\usepackage{array}      % Enhances array and tabular environments
-\usepackage{booktabs}   % For better looking tables (optional, but recommended)
-\usepackage{graphicx}
-\usepackage{tikz}
+\documentclass[12pt]{article}                         
+\pagestyle{plain}
 
-\title{Function Translations}
-\author{A. I. Assistant}
-\date{\today}
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+\usepackage[
+  letterpaper,
+  left=0.8in,
+  right=0.8in,
+  textheight=9.5in,
+  bmargin=0.5in  % Adjust this value to push the footer down
+]{geometry}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name:} % Left header with name
+\fancyhead[R]{November 13th 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
 
 \begin{document}
 
-\maketitle % Displays the title, author, and date
-
-\section*{Function Translation Rules}
-
-\subsection*{Transformation Rules}
-The following table summarizes the rules for vertical translation of a function $y = f(x)$.
-
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 18} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 6 \\
+    \normalsize Transformations
+\end{center}
+\vspace{-0.5cm}
+\noindent
+\section*{Transformation Rules}
 \begin{table}[h!]
 \centering
-\caption{Translation Rules}
-\label{tab:vertical_translation}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Function} & \textbf{Vertical Translation} & \textbf{Result} & \textbf{Point} \\
-\hline
-$y = f(x)$ & \textbf{Upward} by $k$ units & $y = f(x) + k$ & $(x, y + k)$ \\
-\hline
-$y = f(x)$ & \textbf{Downward} by $k$ units & $y = f(x) - k$ & $(x, y - k)$ \\
-\hline
-$y = f(x)$ & \textbf{Right} by $h$ units & $y = f(x - h)$ & $(x - h, y)$ \\
-\hline
-$y = f(x)$ & \textbf{Left} by $h$ units & $y = f(x + h)$ & $(x + h, y)$ \\
-\hline
-$y = f(x)$ & \textbf{Stretch} by $h$ units & $y = f(x - h)$ & $(x - h, y)$ \\
-\hline
-$y = f(x)$ & \textbf{LeSft} by $h$ units & $y = f(x + h)$ & $(x + h, y)$ \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection*{Parent Translation}
-The following table summarizes the rules for horizontal translation of a function $y = f(x)$.
-
-\begin{table}[h!]
-\centering
-\caption{Translating $f(x)=x^2$}
-\label{tab:vertical_translation}
 \begin{tabular}{|c|c|c|c|}
 \hline
 \textbf{Function} & \textbf{Vertical Translation} & \textbf{Result} & \textbf{Point} \\
@@ -69,50 +68,23 @@ $y = x^2$ & \textbf{Shrink} for $0<|c|<1$ & $y = \frac{1}{2}f(x)$ & $(x, \frac{1
 \end{tabular}
 \end{table}
 
-\section*{Quadratic Function Transformations}
-
-% The tabular environment uses fixed-width columns (p{}) to ensure text wrapping.
-% The vertical height is enforced using \rule{0pt}{5cm} inside the second data row.
-\begin{tabular}{|>{\centering\arraybackslash}p{2.5cm}|p{4cm}|p{4cm}|>{\centering\arraybackslash}p{2.5cm}|}
-\hline
-\textbf{Function} & \textbf{Vertical Translation} & \textbf{Resulting Equation} & \textbf{Transformed Point} \\
-\hline
-$y = x^2$ & Upward by $k$ units & $y = x^2 + k$ & $(x, y + k)$ \\
-\hline
-% This row contains the large vertical gap, enforced by \rule{0pt}{5cm}
-$y = x^2$ & \rule{0pt}{5cm}Downward by $k$ units & $y = x^2 - k$ & $(x, y - k)$ \\
-\hline
-\end{tabular}
 
 \section*{Quadratic Function Transformations}
 
 % The tabular environment uses fixed-width columns (p{}) to ensure text wrapping.
 % The vertical height is enforced using \rule{0pt}{5cm} inside the second data row.
-Convert each of the following Transformations from function notation to words
-\begin{tabular}{|>{\centering\arraybackslash}p{3cm}|p{3cm}|p{3cm}|>{\centering\arraybackslash}p{3cm}|}
+Convert each of the following Transformations from function notation into descriptive words \\\\
+\begin{tabular}{|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{4cm}|}
 \hline
 $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3)+4$ \\
 % This row contains the large vertical gap, enforced by \rule{0pt}{5cm}
-& \rule{0pt}{5cm}& &  \\
-\hline
-\end{tabular}
-
-\vspace{4cm}
-\section*{Quadratic Function Transformations}
-
-% The tabular environment uses fixed-width columns (p{}) to ensure text wrapping.
-% The vertical height is enforced using \rule{0pt}{5cm} inside the second data row.
-If $(3,4)$ is a point on the graph $f(x)$, what ordered pair must also be \\ on the graph of $y$ using the same Transformation from above \\
-\begin{tabular}{|>{\centering\arraybackslash}p{3cm}|p{3cm}|p{3cm}|>{\centering\arraybackslash}p{3cm}|}
-\hline
-$y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3)+4$ \\
-% This row contains the large vertical gap, enforced by \rule{0pt}{5cm}
-& \rule{0pt}{5cm}& &  \\
+& \rule{0pt}{8cm}& &  \\
 \hline
 \end{tabular}
 
 
-\section*{Quadratic Function Transformations}
+\noindent
+\section*{Transformations From Graph}
 \begin{minipage}[c]{0.40\textwidth} % Minipage for all graphs
     \centering
 
@@ -120,7 +92,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=f(x)$ below with transformation $y=2f(x)$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
@@ -137,7 +109,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=h(x)$ below with transformation $y=h(x-3)$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
@@ -154,7 +126,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=h(x)$ below with transformation $y=h(x-3)$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
@@ -174,7 +146,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=g(x)$ below with transformation $y=-g(x)$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
@@ -191,7 +163,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=k(x)$ below with transformation $y=-k(x)-3$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
@@ -208,7 +180,7 @@ $y = \displaystyle\frac{1}{2}f(x-1)+2$ & $y=5f(x)+3$ & $y=-2f(x+1)-2$ & $y=f(x-3
     Adjust $y=k(x)$ below with transformation $y=-k(x)-3$
     \begin{tikzpicture}
 	[
-		scale=0.45,
+		scale=0.55,
 		vector style/.style={->, very thick}
 	]
     \draw[gray!15,step=1cm] (-5,-5) grid (5,5);
