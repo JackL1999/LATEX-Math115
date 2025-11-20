@@ -55,7 +55,7 @@
     arc=2mm                 % Corner radius
 ]
 \textbf{Definition:} 
-\textit{A polynomial is a function $f(x)$ of the form $$f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_2x^2+a_1x+a_0$$
+\textit{A polynomial is a function $f(x)$ of the standard form: $$f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_2x^2+a_1x+a_0$$
 where $a_n, a_{n-1},\dots,a_2,a_1,a_0$ are real numbers and $n$ is a non-negative integer}
 \end{tcolorbox}
 
@@ -116,58 +116,6 @@ For the following, write down new examples of functions that are not already wri
     top=1mm, bottom=1mm,    % Vertical padding
     arc=2mm                 % Corner radius
 ]
-\textbf{Reminder:} 
-\textit{Given a function $f(x)$, 
-\begin{itemize} 
-    \item The x-intercepts are the coordinate points of the form $(x,0)$ on the graph $f(x)$ 
-    \item The y-intercept is the coordinate points of the form $(0,f(0))$ on the graph of $f(x)$
-\end{itemize}}
-\end{tcolorbox}
-\begin{tcolorbox}[
-    width=\linewidth,
-    colframe=black,         % Border color
-    colback=white,          % Background color
-    boxrule=0.5pt,          % Border thickness
-    left=1mm, right=1.1mm,    % Horizontal padding
-    top=1mm, bottom=1mm,    % Vertical padding
-    arc=2mm                 % Corner radius
-]
-\textbf{Definition:} 
-\textit{Given a polynomial $f(x)$, the number of times a given term $(x-c)$ 
-appears in the factored form of $f(x)$ is called the \textbf{multiplicity}}
-\end{tcolorbox}
-\noindent\\
-Example: If we have the polynomial: $g(x) = (x-1)(x-2)^4(x+3)^3(x+4)^2$
-\begin{itemize}
-    \item Then we can say the following solutions are $x= 1, x= 2,x= -3,x= -4$ 
-    \item Now, notice that: $x=\hphantom{-}1$ has a multiplicity of 1, and $x=\hphantom{-}2$ has a multiplity of 4 \\
-    \hspace*{90pt} $x=-3$ has a multiplicity of 3, and $x=-4$ has a multiplity of 2
-    \item The y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
-    \item The x-intercepts are at $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
-\end{itemize}
-\noindent\\
-For the following problems, find the x-intercepts and their multiplicities, and the y-intercepts
-\begin{enumerate}
-    \item[\#1] $f(x) = (x-2)^3(x-1)$
-    \\\\\\
-    \item[\#2] $f(x) = (x+1)^2(x-1)$
-    \\\\\\
-    \item[\#3] $f(x) = (x^2-4)(x+3)^3$
-    \\\\\\
-    \item[\#4] $f(x) = (x-1)^4(x^2+3)(x+2)^2$
-    \\\\\\
-    \item[\#5] $f(x) = x(x^2-2)(x-3)^3(x+4)^2$
-\end{enumerate}
-\vspace{5cm}
-\begin{tcolorbox}[
-    width=\linewidth,
-    colframe=black,         % Border color
-    colback=white,          % Background color
-    boxrule=0.5pt,          % Border thickness
-    left=1mm, right=1.1mm,    % Horizontal padding
-    top=1mm, bottom=1mm,    % Vertical padding
-    arc=2mm                 % Corner radius
-]
 \textbf{Definition:} 
 \textit{\begin{itemize}
     \item The highest power of $x$ that shows up in a polynomial is called the \textbf{degree} of the polynomial
@@ -215,10 +163,10 @@ For each polynomial below, find the following: \\
 \rule[0.5em]{\linewidth}{0.4pt}
 \noindent
 EX\#1 $f(x) =  -x^2 + 4$ \hspace{2.5cm}
-EX\#2 $f(x) =   2x^3 + x$ \hspace{2.5cm}
+EX\#2 $f(x) =   2x^3 + x$ \hspace{1.9cm}
 EX\#3 $f(x) =   4x^6 - 2x - 1$ \\
-Degree: 2, \hspace{4.6cm} Degree: 3, \hspace{4.3cm} Degree: 6, \\
-Leading Coeff: -1  \hspace{3.3cm} Leading Coeff: 2, \hspace{3cm} Leading Coeff: 4 \\
+Degree: 2 (even), \hspace{3.2cm} Degree: 3 (odd) \hspace{3cm} Degree: 6 (even), \\
+Leading Coeff: -1 (negative)  \hspace{33pt} Leading Coeff: 2 (negative) \hspace{1cm} Leading Coeff: 4 (positive)\\
 \begin{tikzpicture}[scale=0.15]
         \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
         \draw[line width=0.2mm, -latex] (-8,0) -- (8.2,0) node[right] {$x$};
@@ -256,8 +204,8 @@ Leading Coeff: -1  \hspace{3.3cm} Leading Coeff: 2, \hspace{3cm} Leading Coeff: 
     \end{tikzpicture}\\\\
 \rule[0.5em]{\linewidth}{0.4pt}
 \#1 $f(x) =  x^3+4$ \hspace{3cm}
-\#2 $f(x) =  3x(2-x)$ \hspace{3cm}
-\#3 $f(x) =  -x^5+10x+x$ \\
+\#2 $f(x) =  8x^2-x+2$ \hspace{2.5cm}
+\#3 $f(x) =  -3x^8 - 2x^3 + x^2$ \\
 \\\\\\
 \begin{tikzpicture}[scale=0.15]
         \draw[gray!15,step=1cm] (-8,-8) grid (8,8);
@@ -286,8 +234,8 @@ Leading Coeff: -1  \hspace{3.3cm} Leading Coeff: 2, \hspace{3cm} Leading Coeff: 
         %\draw[blue,line width=1pt, latex-latex] plot[domain= -7:7] (\x,{0.25*\x*\x-4}) node[font=\tiny] {};    
     \end{tikzpicture}\\\\
 \rule[0.5em]{\linewidth}{0.4pt}
-\#4 $f(x) =  (x-1)(x+2)$ \hspace{2cm}
-\#5 $f(x) =  2(3-x)^2$ \hspace{2cm}
+\#4 $f(x) =  x^2+2x+4$ \hspace{2cm}
+\#5 $f(x) =  -6x^3+2x^2+x$ \hspace{2cm}
 \#6 $f(x) =  -x^5+10x+x$ \\
 \\\\\\
 \begin{tikzpicture}[scale=0.15]
@@ -315,9 +263,5 @@ Leading Coeff: -1  \hspace{3.3cm} Leading Coeff: 2, \hspace{3cm} Leading Coeff: 
         \draw[line width=0.2mm,  -latex] (0,-8) -- (0,8.2) node[above] {$y$};
         \foreach \y in {-8,...,8} \draw (.1,\y)--(-.1,\y);
         %\draw[blue,line width=1pt, latex-latex] plot[domain= -7:7] (\x,{0.25*\x*\x-4}) node[font=\tiny] {};    
-    \end{tikzpicture}\\
-%   also do x to inf and f to inf 
-%   match to graph
-%   and x to blank f to blank from graph
-
+    \end{tikzpicture}
 \end{document}
