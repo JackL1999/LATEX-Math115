@@ -145,4 +145,67 @@ Example: If we have the polynomial: $g(x) = (x-1)(x-2)^4(x+3)^3(x+4)^2$
     \item The y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
     \item The x-intercepts are at $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
 \end{itemize}
+\noindent\\
+For the following problems, find the x-intercepts and their multiplicitie, and the y-intercepts
+\begin{enumerate}
+    \item[\#1] $f(x) = (x-2)^3(x-1)$
+    \\\\\\
+    \item[\#2] $f(x) = (x+1)^2(x-1)$
+    \\\\\\
+    \item[\#3] $f(x) = (x^2-4)(x+3)^3$
+    \\\\\\
+    \item[\#4] $f(x) = (x-1)^4(x^2+3)(x+2)^2$
+    \\\\\\
+    \item[\#5] $f(x) = x(x^2-2)(x-3)^3(x+4)^2$
+\end{enumerate}
+\vspace{5cm}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Definition:} 
+\textit{\begin{itemize}
+    \item The highest power of $x$ that shows up in a polynomial is called the \textbf{degree} of the polynomial
+    \item The number in front of the $x^n$ with the highest power is called the \textbf{leading coefficient}
+\end{itemize}}
+\end{tcolorbox}
+\begin{center}
+\setlength{\extrarowheight}{3pt}
+\begin{tabular}{
+    |>{\centering\arraybackslash}p{0.25\textwidth}
+    |>{\centering\arraybackslash}p{0.15\textwidth}
+    |>{\centering\arraybackslash}p{0.15\textwidth}
+    |>{\centering\arraybackslash}p{0.15\textwidth}
+    |>{\centering\arraybackslash}p{0.15\textwidth}|}
+\hline
+& \multicolumn{2}{|c|}{\textbf{Even Degree}} & \multicolumn{2}{|c|}{\textbf{Odd Degree}}\\
+\hline
+Sign of Leading Coeff & POSITIVE & NEGATIVE & POSITIVE & NEGATIVE \\
+\hline
+End Behavior & 
+\begin{tikzpicture}
+    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {(\x)^4});
+    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {(\x)^4});
+\end{tikzpicture} & 
+\begin{tikzpicture}
+    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {-1*(\x)^4});
+    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {-1*(\x)^4});
+\end{tikzpicture} & 
+\begin{tikzpicture}
+    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {(\x)^6});
+    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {-1*(\x)^6+1});
+\end{tikzpicture} & 
+\begin{tikzpicture}
+    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {-1*(\x)^6+1});
+    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {(\x)^6});
+\end{tikzpicture}\\
+\hline
+\end{tabular}
+\end{center}
+
 \end{document}
