@@ -55,7 +55,7 @@
     arc=2mm                 % Corner radius
 ]
 \textbf{Definition:} 
-\textit{A function $f(x)$ of the form $f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_2x^2+a_1x+a_0$\\
+\textit{A polynomial is a function $f(x)$ of the form $$f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_2x^2+a_1x+a_0$$
 where $a_n, a_{n-1},\dots,a_2,a_1,a_0$ are real numbers and $n$ is a non-negative integer}
 \end{tcolorbox}
 
@@ -117,7 +117,11 @@ For the following, write down new examples of functions that are not already wri
     arc=2mm                 % Corner radius
 ]
 \textbf{Reminder:} 
-\textit{Given a function $f(x)$, coordinate points of the form $(x,0)$ on the graph $f(x)$ are the x-intercepts, and coordinate points of the form $(0,f(0))$ on the graph of $f(x)$ are the y-intercepts}
+\textit{Given a function $f(x)$, 
+\begin{itemize} 
+    \item The x-intercepts are the coordinate points of the form $(x,0)$ on the graph $f(x)$ 
+    \item The y-intercept is the coordinate points of the form $(0,f(0))$ on the graph of $f(x)$
+\end{itemize}}
 \end{tcolorbox}
 \begin{tcolorbox}[
     width=\linewidth,
@@ -132,4 +136,13 @@ For the following, write down new examples of functions that are not already wri
 \textit{Given a polynomial $f(x)$, the number of times a given term $(x-c)$ 
 appears in the factored form of $f(x)$ is called the \textbf{multiplicity}}
 \end{tcolorbox}
+\noindent\\
+Example: If we have the polynomial: $g(x) = (x-1)(x-2)^4(x+3)^3(x+4)^2$
+\begin{itemize}
+    \item Then we can say the following solutions are $x= 1, x= 2,x= -3,x= -4$ 
+    \item Now, notice that: $x=\hphantom{-}1$ has a multiplicity of 1, and $x=\hphantom{-}2$ has a multiplity of 4 \\
+    \hspace*{90pt} $x=-3$ has a multiplicity of 3, and $x=-4$ has a multiplity of 2
+    \item The y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
+    \item The x-intercepts are at $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
+\end{itemize}
 \end{document}
