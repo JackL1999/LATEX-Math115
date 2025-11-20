@@ -145,12 +145,12 @@ End Behavior &
     \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {-1*(\x)^4});
 \end{tikzpicture} & 
 \begin{tikzpicture}
-    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {(\x)^6});
-    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {-1*(\x)^6+1});
-\end{tikzpicture} & 
-\begin{tikzpicture}
     \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {-1*(\x)^6+1});
     \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {(\x)^6});
+\end{tikzpicture} & 
+\begin{tikzpicture}
+    \draw[very thick, <-] plot [domain=-1:-0.5, samples=50] (\x, {(\x)^6});
+    \draw[very thick, ->] plot [domain=0.5:1, samples=50] (\x, {-1*(\x)^6+1});
 \end{tikzpicture}\\
 \hline
 \end{tabular}
