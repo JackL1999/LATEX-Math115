@@ -1,20 +1,26 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{fancyhdr}
 \usepackage{enumitem}
 
-\usepackage[left=1in, right=1in, top=1.5in, bottom=1in]{geometry}% Set up custom header
+\usepackage[
+  letterpaper,
+  left=0.8in,
+  right=0.8in,
+  textheight=9.5in,
+  bmargin=0.5in  % Adjust this value to push the footer down
+]{geometry}
 \pagestyle{fancy}
 \fancyhf{} % Clear all header and footer fields
-\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
-
+\fancyhead[L]{Your Name:} % Left header with name
+\fancyhead[R]{Novemeber 20th 2025} % Right header with date
 \newenvironment{myLectureNotes}{
     % Start the description environment with your specific settings
     \begin{description}[
     font=\normalfont,      % % Ensures the content text is *not* bold (only the label is)
     style=nextline,        % % Forces the content to start on a new line below the label
-    leftmargin=20pt,       % % Sets the indentation of the entire content block from the page's left margin
+    leftmargin=25pt,       % % Sets the indentation of the entire content block from the page's left margin
     itemindent=10pt,       % % Sets an additional indent for the content within the item (adds to leftmargin)
     labelsep=0.5em,        % % The horizontal space *between* the label and content (ignored due to style=nextline)
     itemsep=1em,         % % Adds vertical space *between* different \item entries (e.g., between Updates and Topic)
@@ -30,7 +36,6 @@
 }
 
 \newcommand{\EndNotes}{%
-    % End the list environment
     \end{myLectureNotes}
 }
 
@@ -45,32 +50,22 @@
 \end{center}
 
 \DayNotes{Day 01 | Act 01 | (08/19)}
-    \item[\textbf{Updates:}] 
+    \item[\quad\textbf{Updates:}] 
     Prof TA LA Faculty Info, Activities built their own Community Guidelines, Name cards,
     Introductions, Slido about Summer, Stem lab visit
 
-    \item[\textbf{Topic:}] 
-    Chaper 1: Section 2: Representating Collections of Numbers
+    \item[\quad\textbf{Topic:}] 
+    Chapter 1: Section 2: Representating Collections of Numbers
 
-    \item[\textbf{Material:}] 
-    Chaper 1: Section 2: Representating Collections of Numbers
-    
-    \item[\textbf{Notes:}] 
-    Chaper 1: Section 2: Representating Collections of Numbers
+    \item[\quad\textbf{Material:}] 
+    Interval Notation $(a,b)$ and inequality notation $a\leq x \leq b$ with $\pm \infty$ from a number line
+
+    \item[\quad\textbf{Notes:}] 
+    Students had issues remembering solid or empty dot and their respective symbol
 \EndNotes
+\rule[0.5em]{\linewidth}{0.4pt}
 
-\DayNotes{Day 01 | Act 01 | (08/19)}
-    \item[\textbf{Updates:}] 
-    Prof TA LA Faculty Info, Activities built their own Community Guidelines, Name cards,
-    Introductions, Slido about Summer, Stem lab visit
 
-    \item[\textbf{Topic:}] 
-    Chaper 1: Section 2: Representating Collections of Numbers
-\EndNotes
-
-\section*{Day 01 | Act 01 | (08/19)}
-
-\section*{Day 02 | Act 01 | (08/20)}
 \section*{Day 01 | Act 01 | (08/19)} 
 \hspace*{5mm} \textbf{Updates:} Prof TA LA Faculity Info, Activties built their own Community Guidelines, Name cards, \\
 \hspace*{2mm} Introductions, Slido about Summer, Stem lab visit
