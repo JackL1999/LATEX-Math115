@@ -100,5 +100,64 @@ For the following problems, find the x-intercepts and their multiplicities, and 
     \item[\#5] $f(x) = x(x^2-2)(x-3)^3(x+4)^2$
 \end{enumerate}
 
+\subsection*{Graphing Multiplicities}
+\begin{tikzpicture}
+\begin{axis}[
+    % Set the overall dimensions of the plot area
+    height=6cm, 
+    width=16cm,  
+    % Set the domain and range for the axes
+    xmin=-2.5, xmax=2.5,
+    ymin=-2.2, ymax=2.2,
+    % Manually set the tick marks
+    xtick={-2.5,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5},
+    ytick={-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5},
+    % Add 5 minor lines between each major tick on both axes
+    minor x tick num=4,
+    minor y tick num=4,
+    % This command draws both major and minor grid lines
+    grid=both,
+    major grid style={line width=.1pt,draw=gray!80},
+    minor grid style={line width=.1pt,draw=gray!40},
+    % Axis and label styling
+    axis lines=middle,
+    tick label style={font=\tiny},
+    xlabel style={at={(current axis.right of origin)}, anchor=west},
+    ylabel style={at={(current axis.above origin)}, anchor=south},
+    axis line style={-stealth}
+]
 
+\addplot[domain=-2.18:2.18, smooth, samples=100, thick, red,latex-latex] {(1/8)*x*(x+1)^2*(x-1)^2*(x-2)^3*(x+2)^3};
+\draw[fill=blue, draw=blue] (-2, 0)   circle (2pt) 
+    node[xshift=-8pt, yshift=8pt, font=\small] {A};
+
+\draw[fill=blue, draw=blue] (-1, 0)   circle (2pt) 
+    node[xshift=2pt, yshift=8pt, font=\small] {B};
+
+\draw[fill=blue, draw=blue] (0, 0)   circle (2pt) 
+    node[xshift=8pt, yshift=8pt, font=\small] {C};
+
+\draw[fill=blue, draw=blue] (1, 0)   circle (2pt) 
+    node[xshift=6pt, yshift=8pt, font=\small] {D};
+
+\draw[fill=blue, draw=blue] (2, 0)   circle (2pt) 
+    node[xshift=-8pt, yshift=8pt, font=\small] {E};
+
+\end{axis}
+\end{tikzpicture}\\
+\noindent
+We have 5 intercepts for the following function as described on the above graph \\
+assume their multiplities are the smallest that they can be.\\\\
+\noindent
+Let's find the multiplities of each intercept and their value
+\begin{itemize}
+    \item Intercept A:\\
+    \item Intercept B:\\
+    \item Intercept C:\\
+    \item Intercept D:\\
+    \item Intercept E:\\
+\end{itemize}
+What do we think the smallest degree of the polynomial will be?
+\\\\\\\\\\\\\\
+What is the end behavior of this function?
 \end{document}
