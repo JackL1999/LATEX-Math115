@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}                         
+\pagestyle{plain}
+
+\usepackage{amsmath}     % Enhanced math environments (e.g., align).
+\usepackage{amsfonts}    % Math fonts (e.g., \mathfrak{}).
+\usepackage{amstext}     % Text inside math mode (e.g., \text{where}).
+\usepackage{amssymb}     % Extra math symbols (e.g., \mathbb{R}).
+\usepackage{array}       % Advanced table/array column definitions.
+\usepackage{circledtext} % Puts text inside a circle (e.g., \circledtext{A}).
+\usepackage{comment}     % Include/exclude blocks of text.
+\usepackage{enumerate}   % Customize itemized/numbered lists.
+\usepackage{graphicx}    % Include images/graphics (\includegraphics).
+\usepackage{latexsym}    % Access to basic LaTeX symbols.
+\usepackage{multicol}    % Allows text columns on a page.
+\usepackage{pgfplots}    % Create scientific plots from data (based on TikZ).
+\usepackage{tabularx}    % Tables that stretch to page width.
+\usepackage{tasks}       % Create multi-column lists.
+\usepackage{textcomp}    % Provides many text symbols (e.g., \textcelsius).
+\usepackage{tikz}        % Create vector graphics and diagrams.
+\usepackage{xcolor}      % Define and use colors.
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\pgfplotsset{compat=1.18}
+
+\usepackage[
+  letterpaper,
+  left=0.8in,
+  right=0.8in,
+  textheight=9.5in,
+  bmargin=0.5in  % Adjust this value to push the footer down
+]{geometry}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Your Name:} % Left header with name
+\fancyhead[R]{December 2nd 2025} % Right header with date
+\renewcommand{\headrulewidth}{0.4pt} % Horizontal line below the header
+
+\begin{document}
+
+% Main title
+\begin{center}
+    \Large \textbf{Math 115E Activity 21} \\
+    \vspace{0.2cm}
+    \normalsize Chapter 7: Polynomials \\
+    \normalsize Multiplicities
+\end{center}
+\vspace{-0.5cm}
+\subsection*{Multiplicities of Polynomials}
+
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,  % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Reminder:} 
+\textit{Given a function $f(x)$, 
+\begin{itemize} 
+    \item The x-intercepts are the coordinate points of the form $(x,0)$ on the graph $f(x)$ 
+    \item The y-intercept is the coordinate points of the form $(0,f(0))$ on the graph of $f(x)$
+\end{itemize}}
+\end{tcolorbox}
+\begin{tcolorbox}[
+    width=\linewidth,
+    colframe=black,         % Border color
+    colback=white,          % Background color
+    boxrule=0.5pt,          % Border thickness
+    left=1mm, right=1.1mm,    % Horizontal padding
+    top=1mm, bottom=1mm,    % Vertical padding
+    arc=2mm                 % Corner radius
+]
+\textbf{Definition:} 
+\textit{Given a polynomial $f(x)$, the number of times a given term $(x-c)$ 
+appears in the factored form of $f(x)$ is called the \textbf{multiplicity}}
+\end{tcolorbox}
+\noindent\\
+Example: If we have the polynomial: $g(x) = (x-1)(x-2)^4(x+3)^3(x+4)^2$
+\begin{itemize}
+    \item Then we can say the following solutions are $x= 1, x= 2,x= -3,x= -4$ 
+    \item Now, notice that: $x=\hphantom{-}1$ has a multiplicity of 1, and $x=\hphantom{-}2$ has a multiplity of 4 \\
+    \hspace*{90pt} $x=-3$ has a multiplicity of 3, and $x=-4$ has a multiplity of 2
+    \item The y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
+    \item The x-intercepts are at $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
+\end{itemize}
+\noindent\\
+For the following problems, find the x-intercepts and their multiplicities, and the y-intercepts
+\begin{enumerate}
+    \item[\#1] $f(x) = (x-2)^3(x-1)$
+    \\\\\\
+    \item[\#2] $f(x) = (x+1)^2(x-1)$
+    \\\\\\
+    \item[\#3] $f(x) = (x^2-4)(x+3)^3$
+    \\\\\\
+    \item[\#4] $f(x) = (x-1)^4(x^2+3)(x+2)^2$
+    \\\\\\
+    \item[\#5] $f(x) = x(x^2-2)(x-3)^3(x+4)^2$
+\end{enumerate}
+
+
+\end{document}
