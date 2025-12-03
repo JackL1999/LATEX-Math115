@@ -58,10 +58,10 @@
     arc=2mm                 % Corner radius
 ]
 \textbf{Reminder:} 
-\textit{Given a function $f(x)$, 
+\textit{Given a function $f(x)$ and knowing that points are of the form $(x,y)$, 
 \begin{itemize} 
-    \item The x-intercepts are the coordinate points of the form $(x,0)$ on the graph $f(x)$ 
-    \item The y-intercept is the coordinate points of the form $(0,f(0))$ on the graph of $f(x)$
+    \item The x-intercepts are when $y=0$, the coordinate points of the form $(x,0)$ on the function
+    \item The y-intercept is when $x=0$, the coordinate points of the form $(0,f(0))$ on the function
 \end{itemize}}
 \end{tcolorbox}
 \begin{tcolorbox}[
@@ -83,11 +83,11 @@ Example: If we have the polynomial: $g(x) = (x-1)(x-2)^4(x+3)^3(x+4)^2$
     \item Then we can say the following solutions are $x= 1, x= 2,x= -3,x= -4$ 
     \item Now, notice that: $x=\hphantom{-}1$ has a multiplicity of 1, and $x=\hphantom{-}2$ has a multiplity of 4 \\
     \hspace*{90pt} $x=-3$ has a multiplicity of 3, and $x=-4$ has a multiplity of 2
-    \item The y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
-    \item The x-intercepts are at $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
+    \item The only y-intercepts is at $f(0)=(0-1)(0-2)^4(0+3)^3(0+4)^2=(-1)(-2)^4(3)^3(4)^2=-6912$
+    \item The multiple x-intercepts are solutions of $0=f(x)$ which are $(1,0), (2,0),(-3,0),(-4,0)$
 \end{itemize}
 \noindent\\
-For the following problems, find the x-intercepts and their multiplicities, and the y-intercepts
+For the following problems, x-intercepts, their multiplicities, and the y-intercepts
 \begin{enumerate}
     \item[\#1] $f(x) = (x-2)^3(x-1)$
     \\\\\\
@@ -158,6 +158,42 @@ Let's find the multiplities of each intercept and their value
     \item Intercept E:\\
 \end{itemize}
 What do we think the smallest degree of the polynomial will be?
-\\\\\\\\\\\\\\
-What is the end behavior of this function?
+\\\\
+\noindent
+Sketch graph of the following function: $f(x)=\frac{1}{40}x(x+1)(x-2)^2(x-3)^2$\\
+Use the end behavior, x intercepts, and the multiplicities of the following function:\\
+\hspace{-1.2cm}
+\begin{tikzpicture}
+\begin{axis}[
+    % Set the overall dimensions of the plot area
+    height=8cm, 
+    width=16cm,  
+    % Set the domain and range for the axes
+    xmin=-1.5, xmax=4,
+    ymin=-2.2, ymax=3.2,
+    % Manually set the tick marks
+    xtick={-1.5,-1,-0.5,0,0.5,1,1.5,2,2.5,3,3.5,4},
+    ytick={-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3},
+    % Add 5 minor lines between each major tick on both axes
+    minor x tick num=4,
+    minor y tick num=4,
+    % This command draws both major and minor grid lines
+    grid=both,
+    major grid style={line width=.1pt,draw=gray!80},
+    minor grid style={line width=.1pt,draw=gray!40},
+    % Axis and label styling
+    axis lines=middle,
+    tick label style={font=\tiny},
+    xlabel style={at={(current axis.right of origin)}, anchor=west},
+    ylabel style={at={(current axis.above origin)}, anchor=south},
+    axis line style={-stealth}
+]
+
+%\addplot[domain=-1.5:3.8, smooth, samples=100, thick, red,latex-latex] {(1/10)*x*((x+1))*((x-2)^2)*((x-3)^2)};
+
+
+%had a small typo for the above function, plus the shape doesnt look the greatest but its okay
+% next time show degree and multiplicities and if there are some values missing
+\end{axis}
+\end{tikzpicture}
 \end{document}
